@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -11,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Foreground
+  - Middleground
+  - Background
   - 
   - 
   - 
@@ -40,4 +41,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 295393417
+    locked: 0
+  - name: Middleground
+    uniqueID: 335516477
+    locked: 0
+  - name: Foreground
+    uniqueID: 1169442885
+    locked: 0
+  - name: Characters
+    uniqueID: 1718869805
+    locked: 0
+  - name: Props
+    uniqueID: 4058586103
+    locked: 0
+  - name: Morgan
+    uniqueID: 1244972923
     locked: 0
