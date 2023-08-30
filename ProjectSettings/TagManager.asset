@@ -43,20 +43,17 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 295393417
+    uniqueID: 3399994359
     locked: 0
   - name: Middleground
-    uniqueID: 335516477
+    uniqueID: 1564814347
     locked: 0
   - name: Foreground
-    uniqueID: 1169442885
+    uniqueID: 3197907749
     locked: 0
-  - name: Characters
-    uniqueID: 1718869805
+  - name: NPC
+    uniqueID: 1187567783
     locked: 0
-  - name: Props
-    uniqueID: 4058586103
-    locked: 0
-  - name: Morgan
-    uniqueID: 1244972923
+  - name: Player
+    uniqueID: 3593789747
     locked: 0
