@@ -6724,7 +6724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89c460fde846a5419daf9f4645e0cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 0}
+  followTarget: {fileID: 1520789803}
   targetPosition: {x: 0, y: 0, z: 0}
   cameraSpeed: 4
 --- !u!1 &551621467
@@ -24033,6 +24033,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1520789803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2472707257239677263, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+  m_PrefabInstance: {fileID: 5207329526062906396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1159218739497639626
 PrefabInstance:
   m_ObjectHideFlags: 0
