@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 1159218739932626239}
   - component: {fileID: 1159218739932626238}
   - component: {fileID: 1159218739932626233}
-  - component: {fileID: 5121749886818786579}
   m_Layer: 0
   m_Name: Daniela
   m_TagString: NPC
@@ -244,15 +243,3 @@ MonoBehaviour:
   - "Daniela: Hola Morgan, \xBFqu\xE9 tal el camino?"
   - 'Morgan: Muy agusto la neta, me vi dos pelis'
   - "Daniela: Agusto, \xBFvamos a la casa?"
---- !u!114 &5121749886818786579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159218739932626213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7518d7de3f4bd87428c166bba2fb3730, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
