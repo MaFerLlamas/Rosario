@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField]
-    private GameObject followTarget;
+    public GameObject followTarget;
     [SerializeField]
     private Vector3 targetPosition;
     [SerializeField]
