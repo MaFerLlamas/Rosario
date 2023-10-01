@@ -47,6 +47,9 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
+            FindObjectOfType<MorganController>().morganShouldMove = false;
+            FindObjectOfType<CameraFollow>().followTarget = GameObject.Find("Daniela");
+            FindObjectOfType<DanielaController>().danielaShouldMove = true;
         }
     }
 
@@ -72,5 +75,3 @@ public class DialogueCasaDaniela0 : MonoBehaviour
         }
     }
 }
-
-
