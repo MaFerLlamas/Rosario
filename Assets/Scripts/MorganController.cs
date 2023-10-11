@@ -15,12 +15,15 @@ public class MorganController : MonoBehaviour
     public bool morganShouldMove = true;
 
     public static bool isMorganCreated;
+    private Rigidbody2D playerRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
+
         if(!isMorganCreated){
             isMorganCreated = true;
+            playerRigidbody = GetComponent<Rigidbody2D>();
             DontDestroyOnLoad(this.transform.gameObject);
         }else{
             Destroy(gameObject);
@@ -39,14 +42,16 @@ public class MorganController : MonoBehaviour
             {
                 this.transform.Translate(new Vector3(Input.GetAxisRaw(horizontal)
                 * speed *  Time.deltaTime,0,0));
+                /*playerRigidbody.velocity = new Vector2(
+                    Input.GetAxisRaw(horizontal)*speed, playerRigidbody.velocity.y);*/
             
             }
-
             if (Mathf.Abs(Input.GetAxisRaw(vertical)) > 0.5f)
             {
                 this.transform.Translate(new Vector3(0,Input.GetAxisRaw(vertical)
                 * speed *  Time.deltaTime,0));
-                
+                /*playerRigidbody.velocity = new Vector2(
+                    playerRigidbody.velocity.x, Input.GetAxisRaw(vertical)*speed);   */
             }
         }
     }
