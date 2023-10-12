@@ -12,8 +12,9 @@ public class GoToNewPlace : MonoBehaviour
     {
         Debug.Log("This is a message.");
         if (collision.gameObject.tag.Equals("Player")){
-            
+            Environment.newSpawnName = newSpawnName;
             SceneManager.LoadScene(newPlaceName);
         }
+
     }
 }

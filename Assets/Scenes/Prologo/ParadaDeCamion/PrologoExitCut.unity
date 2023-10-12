@@ -6801,6 +6801,10 @@ PrefabInstance:
       propertyPath: newPlaceName
       value: PrologoCasaDaniela0
       objectReference: {fileID: 0}
+    - target: {fileID: 5908071274760515784, guid: bf297a26208ec1947bd26b585f472142, type: 3}
+      propertyPath: newSpawnName
+      value: entradaCasaDaniela
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf297a26208ec1947bd26b585f472142, type: 3}
 --- !u!1 &767208643 stripped
