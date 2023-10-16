@@ -50,6 +50,7 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             FindObjectOfType<MorganController>().morganShouldMove = false;
             FindObjectOfType<CameraFollow>().followTarget = GameObject.Find("Daniela");
             FindObjectOfType<DanielaController>().danielaShouldMove = true;
+            Environment.prologoCasaDanielaDone = true;
         }
     }
 
