@@ -1,29 +1,25 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections.Generic;
 
-public class DialoguePrologue : MonoBehaviour
+public class DialogueAyuntamientoDaniela : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
-
-
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
     private bool didDialogueStart;
-    private bool didDialogueEnd;
     private int lineIndex;
 
-   
     // Update is called once per frame
     void Update()
     {
         if (isPlayerInRange && Input.GetButtonDown("Fire1")){
-            if (!didDialogueStart && !didDialogueEnd){
+            if (!didDialogueStart){
                 startDialogue();
             }else if (dialogueText.text == dialogueLines[lineIndex]){
                 nextDialogueLine();
@@ -33,7 +29,6 @@ public class DialoguePrologue : MonoBehaviour
             }
         }
     }
-
     private void startDialogue(){
             didDialogueStart = true;
             dialoguePanel.SetActive(true);
@@ -48,38 +43,13 @@ public class DialoguePrologue : MonoBehaviour
         if (lineIndex < dialogueLines.Length){
             StartCoroutine(ShowLine());
         }else {
-            //END OF CONVERSATION 
+            //FIN DEL DIALOGO
             didDialogueStart = false;
-            didDialogueEnd = true;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            FindObjectOfType<MorganController>().morganShouldMove = false;
-            LoadTargetScene();   
+            
         }
-    }
-
-    public void LoadTargetScene()
-    {
-        // Store the name of the current scene.
-        //string currentSceneName = SceneManager.GetActiveScene().name;
-
-        //Destruir antigua Daniela para que funcione la animacion
-        //Destroy(GameObject.Find("DanielaTempPrologue"));
-        // Load the target scene.
-        //SceneManager.LoadScene(targetSceneName); //scene change removed for a new script for player movement
-
-        Rigidbody2D danielaRigidbody;
-        DanielaIdentify Daniela;
-        Daniela = FindObjectOfType<DanielaIdentify>();
-        danielaRigidbody=Daniela.GetComponent<Rigidbody2D>();
-        danielaRigidbody.velocity = new Vector2(5.0f, 0);
-        FindObjectOfType<MorganController>().morganShouldMove = true;
-        GoToNewPlace newPlace = FindObjectOfType<GoToNewPlace>();
-        newPlace.isActive = true;
-
-        // Store the name of the scene to return to.
-        //PlayerPrefs.SetString("PreviousScene", currentSceneName);
     }
 
     private IEnumerator ShowLine(){
