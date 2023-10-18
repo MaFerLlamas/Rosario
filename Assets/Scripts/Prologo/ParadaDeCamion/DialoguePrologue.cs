@@ -19,6 +19,7 @@ public class DialoguePrologue : MonoBehaviour
     private bool didDialogueEnd;
     private int lineIndex;
 
+   
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +34,7 @@ public class DialoguePrologue : MonoBehaviour
             }
         }
     }
+
     private void startDialogue(){
             didDialogueStart = true;
             dialoguePanel.SetActive(true);
@@ -66,7 +68,16 @@ public class DialoguePrologue : MonoBehaviour
         //Destruir antigua Daniela para que funcione la animacion
         //Destroy(GameObject.Find("DanielaTempPrologue"));
         // Load the target scene.
-        SceneManager.LoadScene(targetSceneName);
+        //SceneManager.LoadScene(targetSceneName); //scene change removed for a new script for player movement
+
+        Rigidbody2D danielaRigidbody;
+        DanielaIdentify Daniela;
+        Daniela = FindObjectOfType<DanielaIdentify>();
+        danielaRigidbody=Daniela.GetComponent<Rigidbody2D>();
+        danielaRigidbody.velocity = new Vector2(5.0f, 0);
+        FindObjectOfType<MorganController>().morganShouldMove = true;
+        GoToNewPlace newPlace = FindObjectOfType<GoToNewPlace>();
+        newPlace.isActive = true;
 
         // Store the name of the scene to return to.
         //PlayerPrefs.SetString("PreviousScene", currentSceneName);

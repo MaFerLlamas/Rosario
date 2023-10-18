@@ -7,13 +7,15 @@ public class GoToNewPlace : MonoBehaviour
 {
     public string newPlaceName = "New Scene Name Here";
     public string newSpawnName = "spawn name";
+    public bool isActive = true;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("This is a message.");
-        if (collision.gameObject.tag.Equals("Player")){
-            
+        if (collision.gameObject.tag.Equals("Player") && isActive){
+            Environment.newSpawnName = newSpawnName;
             SceneManager.LoadScene(newPlaceName);
         }
+
     }
 }

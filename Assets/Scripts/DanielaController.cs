@@ -12,7 +12,8 @@ public class DanielaController : MonoBehaviour
 
     private void Update()
     {
-        if (danielaShouldMove && targetPosition != null){
+        
+        if (danielaShouldMove && targetPosition != null && false){
 
             // Calculate the direction to the target.
             Vector3 direction = targetPosition.position - transform.position;
