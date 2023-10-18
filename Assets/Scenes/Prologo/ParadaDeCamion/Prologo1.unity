@@ -8331,6 +8331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChangeZone
       objectReference: {fileID: 0}
+    - target: {fileID: 1066731410328348481, guid: bf297a26208ec1947bd26b585f472142, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8373,6 +8377,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908071274760515784, guid: bf297a26208ec1947bd26b585f472142, type: 3}
+      propertyPath: isActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5908071274760515784, guid: bf297a26208ec1947bd26b585f472142, type: 3}

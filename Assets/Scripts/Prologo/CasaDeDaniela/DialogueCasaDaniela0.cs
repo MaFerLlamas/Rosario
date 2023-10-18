@@ -18,7 +18,7 @@ public class DialogueCasaDaniela0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && Input.GetButtonDown("Fire1")){
+        if (isPlayerInRange && Input.GetButtonDown("Fire1") && !Environment.prologoCasaDanielaDone){
             if (!didDialogueStart){
                 startDialogue();
             }else if (dialogueText.text == dialogueLines[lineIndex]){
@@ -62,7 +62,8 @@ public class DialogueCasaDaniela0 : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D collision){
-        if (collision.gameObject.CompareTag("Player")){
+        Debug.Log(Environment.prologoCasaDanielaDone);
+        if (collision.gameObject.CompareTag("Player") && !Environment.prologoCasaDanielaDone ){
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
             FindObjectOfType<MorganController>().morganShouldMove = false;

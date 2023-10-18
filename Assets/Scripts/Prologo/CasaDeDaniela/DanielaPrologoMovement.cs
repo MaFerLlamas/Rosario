@@ -33,7 +33,8 @@ public class DanielaPrologoMovement : MonoBehaviour
         }else if (this.transform.position.x > -3 && this.transform.position.x < -2 && this.transform.position.y > -2 && this.transform.position.y < -1)
         {
             FindObjectOfType<MorganController>().morganShouldMove = true;
-            Environment.prologoCasaDanielaDone = false;
+            Environment.prologoCasaDanielaMovementDone = true;
+            //Environment.prologoCasaDanielaDone = false;
         }
         
         FindObjectOfType<MorganController>().morganShouldMove = true;
@@ -50,7 +51,7 @@ public class DanielaPrologoMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Environment.prologoCasaDanielaDone)
+        if (Environment.prologoCasaDanielaDone && !Environment.prologoCasaDanielaMovementDone)
         {
             moveDaniela();
         }
