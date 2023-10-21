@@ -1674,6 +1674,12 @@ MonoBehaviour:
   dialogueText: {fileID: 1210362964}
   dialogueLines:
   - "Daniela: Que caloron est\xE1 haciendo en la calle, \xBFo ser\xE1n los bochornos?"
+  - 'Daniela: Te dejo para que descanses un rato del viaje tan enfadoso, yo voy a
+    regresar a trabajar'
+  - 'Daniela: En el refri hay comida por si te da hambre, en la noche hay que ir
+    a cenar al mercado.
+
+'
 --- !u!1 &727139636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1159218739848319472, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
