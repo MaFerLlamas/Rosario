@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &44829706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159218739848319472, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+  m_PrefabInstance: {fileID: 263135549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &45892860
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,11 +295,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.36
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.58
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -326,6 +331,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1159218739932626233, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1159218739932626233, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
@@ -514,6 +523,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &433113408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433113410}
+  m_Layer: 0
+  m_Name: PositionLic1
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433113410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433113408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.87, y: -4.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &441252932
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +716,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1187567783
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f6ad93e6cea97c84fa38403418f3311a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -760,8 +800,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1564814347
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d893cd5d90473544eac0a99e1711e857, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2458,6 +2498,9 @@ GameObject:
   - component: {fileID: 1123758474}
   - component: {fileID: 1123758476}
   - component: {fileID: 1123758475}
+  - component: {fileID: 1123758477}
+  - component: {fileID: 1123758479}
+  - component: {fileID: 1123758478}
   m_Layer: 0
   m_Name: "Lic G\xF3nzalez"
   m_TagString: Untagged
@@ -2525,7 +2568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123758471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.77, y: -4.39, z: 0}
+  m_LocalPosition: {x: 10.85, y: -4.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2540,7 +2583,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123758471}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97dcdbcb28f6da47bf38c8971d0c6e2, type: 3}
   m_Name: 
@@ -2604,6 +2647,68 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.24081802, y: 0.8339977}
   m_EdgeRadius: 0
+--- !u!114 &1123758477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123758471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a40ac5ae8c459e479406910d57e8aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 433113410}
+  endPosition: {fileID: 1284374748}
+  speed: 2
+  LicGonShouldMove: 1
+  LicGonStopMoving: 0
+--- !u!50 &1123758478
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123758471}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1123758479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123758471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7373d8539e22bba4a87e439b3b583fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMark: {fileID: 532906803}
+  dialoguePanel: {fileID: 1981611810}
+  dialogueText: {fileID: 1981611809}
+  dialogueLines:
+  - 'x
+
+'
+  - c
+  - c
+  dialogueLines2:
+  - ' Buena suerte joven !!!'
+  didDialogueAlreadyPast: 0
 --- !u!1 &1124799479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,8 +2765,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1564814347
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c6c891d07d716bc4fab8ad146e4184a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2814,6 +2919,88 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.3362429}
   serializedVersion: 2
   m_Radius: 0.16375709
+--- !u!1 &1258256329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258256331}
+  - component: {fileID: 1258256332}
+  - component: {fileID: 1258256333}
+  m_Layer: 8
+  m_Name: TriggerLicGlez
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258256331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258256329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.72, y: -3.33, z: -0.10297653}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1258256332
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258256329}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1258256333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258256329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 700673ccd8582f749bbcafd623140b4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 1981611810}
+  dialogueText: {fileID: 1981611809}
+  dialogue:
+  - "Ahora s\xED ya vali\xF3, mi mujer\u2026"
+  - 'Que voy a hacer sin ella. Al fin le colme la paciencia.
+
+'
+  - '!!!
+
+'
+  isDialogueActive: 1
 --- !u!1 &1259884014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4891,6 +5078,62 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!1 &1284374746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284374748}
+  m_Layer: 0
+  m_Name: PositionLic2
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1284374748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284374746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.37, y: -4.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1397352964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159218739932626213, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+  m_PrefabInstance: {fileID: 263135549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1397352970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397352964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e55c04c9cc7da543a68115b6f644899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMark: {fileID: 44829706}
+  dialoguePanel: {fileID: 1981611810}
+  dialogueText: {fileID: 1981611809}
+  dialogueLines:
+  - 454 filjglksdfjgoisdfugos erg sdlfk jglskdjf glksdj fg
+  dialogueLines2:
+  - "\" Parece estar muy concentrada en su trabajo, ser\xE1 mejor dejarla trabajar\"\r\n"
+  didDialogueAlreadyPast: 0
 --- !u!1 &1456304707
 GameObject:
   m_ObjectHideFlags: 0
@@ -5084,9 +5327,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1564814347
+  m_SortingLayer: 4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1113bdddf4afdae4b9a08434aca060fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5542,6 +5785,10 @@ PrefabInstance:
     - target: {fileID: 1161599271472984090, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271797656047, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
