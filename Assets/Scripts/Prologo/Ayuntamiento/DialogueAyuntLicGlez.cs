@@ -3,7 +3,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 
-public class DialogueAyuntamientoDaniela : MonoBehaviour
+public class DialogueAyuntLicGlez : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;

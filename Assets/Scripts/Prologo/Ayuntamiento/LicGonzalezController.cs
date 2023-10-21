@@ -16,6 +16,7 @@ public class LicGonzalezController : MonoBehaviour
     private float startTime;
 
     public bool LicGonShouldMove = false; 
+    public bool LicGonStopMoving = false; 
 
     void Start()
     {
@@ -27,25 +28,34 @@ public class LicGonzalezController : MonoBehaviour
 
     void Update()
     {
-        if (LicGonShouldMove){
+        if (true){
 
             float distanceCovered = (Time.time - startTime) * speed;
             float journeyPercentage = distanceCovered / journeyLength;
 
-            transform.position = Vector2.Lerp(currentStart.position, currentTarget, journeyPercentage);
+            if (LicGonShouldMove)
+                transform.position = Vector2.Lerp(currentStart.position, currentTarget, journeyPercentage);
 
-            if (journeyPercentage >= 1.0f)
+            if (journeyPercentage >= 1.0f )
             {
                 // Swap the target position when reaching the current target.
                 if (currentTarget == (Vector2)endPosition.position)
                 {
-                    currentTarget = startPosition.position;
-                    currentStart = endPosition;
+                    if (LicGonShouldMove){
+                        currentTarget = startPosition.position;
+                        currentStart = endPosition;
+                    }else{
+                        LicGonStopMoving = true;
+                    }
                 }
                 else
                 {
-                    currentTarget = endPosition.position;
-                    currentStart = startPosition;
+                    if (LicGonShouldMove){
+                        currentTarget = endPosition.position;
+                        currentStart = startPosition;
+                    }else{
+                        LicGonStopMoving = true;
+                    }
                 }
                 startTime = Time.time;
             }
