@@ -13,12 +13,12 @@ public class DialogueCasaDaniela0 : MonoBehaviour
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private bool firstDialogueActivated;
-    private int lineIndex;
+    private int lineIndex=0;
 
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && Input.GetButtonDown("Fire1") && !Environment.prologoCasaDanielaDone){
+        if (isPlayerInRange && Input.GetButtonDown("Fire1") /*&& !Environment.prologoCasaDanielaDone*/){
             if (!didDialogueStart){
                 startDialogue();
             }else if (dialogueText.text == dialogueLines[lineIndex]){
@@ -33,16 +33,22 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             didDialogueStart = true;
             dialoguePanel.SetActive(true);
             dialogueMark.SetActive(false);
-            lineIndex = 0;
+            if (Environment.prologoCasaDanielaMovementDone)
+            {
+                lineIndex = 1;
+            }
+            //lineIndex = 0;
             Time.timeScale = 0f;
             StartCoroutine(ShowLine());
     }
 
     private void nextDialogueLine(){
         lineIndex++;
-        if (lineIndex < dialogueLines.Length){
+        if (lineIndex < dialogueLines.Length && Environment.prologoCasaDanielaMovementDone || lineIndex <1){
             StartCoroutine(ShowLine());
-        }else {
+            
+        }
+        else {
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
@@ -51,6 +57,12 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             FindObjectOfType<CameraFollow>().followTarget = GameObject.Find("Daniela");
             FindObjectOfType<DanielaController>().danielaShouldMove = true;
             Environment.prologoCasaDanielaDone = true;
+            Debug.Log(lineIndex);
+            if (lineIndex == 3)
+            {
+                Environment.prologoCasaDaniela2Done = true;
+            }
+
         }
     }
 
@@ -63,7 +75,7 @@ public class DialogueCasaDaniela0 : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision){
         Debug.Log(Environment.prologoCasaDanielaDone);
-        if (collision.gameObject.CompareTag("Player") && !Environment.prologoCasaDanielaDone ){
+        if (collision.gameObject.CompareTag("Player") /*&& !Environment.prologoCasaDanielaDone */){
             isPlayerInRange = true;
             dialogueMark.SetActive(true);
             FindObjectOfType<MorganController>().morganShouldMove = false;

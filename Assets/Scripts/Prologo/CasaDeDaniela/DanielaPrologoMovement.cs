@@ -14,12 +14,9 @@ public class DanielaPrologoMovement : MonoBehaviour
         if(this.transform.position.x>8 && this.transform.position.x < 9 && this.transform.position.y > -4 && this.transform.position.y < -3)
         {
             danielaRigidbody.velocity= new Vector2(0, VELOCITY); //up
-            Debug.Log("step 1"+ this.transform.position.x+"/"+ this.transform.position.y);
         }
         else if (daniela.transform.position.x > 8 && daniela.transform.position.x < 9 && daniela.transform.position.y > -2.0f && daniela.transform.position.y < -1.0f){
             danielaRigidbody.velocity = new Vector2(-VELOCITY, 0); //left
-            Debug.Log("step 2");
-
         }
         else if (daniela.transform.position.x > 3 && daniela.transform.position.x < 4 && daniela.transform.position.y > -2 && daniela.transform.position.y < -1)
         {
@@ -34,11 +31,40 @@ public class DanielaPrologoMovement : MonoBehaviour
         {
             FindObjectOfType<MorganController>().morganShouldMove = true;
             Environment.prologoCasaDanielaMovementDone = true;
-            //Environment.prologoCasaDanielaDone = false;
         }
         
-        FindObjectOfType<MorganController>().morganShouldMove = true;
-        //Environment.prologoCasaDanielaDone = false;
+    }
+
+    public void regresarDaniela()
+    {
+        if (this.transform.position.x > -3 && this.transform.position.x < -2 && this.transform.position.y > -1 && this.transform.position.y < 0)
+        {
+            danielaRigidbody.velocity = new Vector2(0, -VELOCITY); //down
+        }
+        else if (daniela.transform.position.x > -3 && daniela.transform.position.x < -2 && daniela.transform.position.y > -4 && daniela.transform.position.y < -3)
+        {
+            danielaRigidbody.velocity = new Vector2(VELOCITY, 0); //right
+
+        }
+        else if (daniela.transform.position.x > 4 && daniela.transform.position.x < 5 && daniela.transform.position.y > -4 && daniela.transform.position.y < -3)
+        {
+            danielaRigidbody.velocity = new Vector2(0, VELOCITY); //up
+        }
+        else if (daniela.transform.position.x > 4 && daniela.transform.position.x < 5 && daniela.transform.position.y > -2 && daniela.transform.position.y < -1)
+        {
+            danielaRigidbody.velocity = new Vector2(VELOCITY, 0); //right
+        }
+        else if (daniela.transform.position.x > 8 && daniela.transform.position.x < 9 && daniela.transform.position.y > -2.0f && daniela.transform.position.y < -1.0f)
+        {
+            danielaRigidbody.velocity = new Vector2(0, -VELOCITY); //down
+        }
+        else if (this.transform.position.x > 8 && this.transform.position.x < 9 && this.transform.position.y > -4 && this.transform.position.y < -3)
+        {
+            danielaRigidbody.velocity = new Vector2(VELOCITY, 0); //right
+            FindObjectOfType<MorganController>().morganShouldMove = true;
+            Environment.prologoCasaDanielaMovement2Done = true;
+            //Environment.prologoCasaDanielaDone = false;
+        }
     }
 
     // Start is called before the first frame update
@@ -54,6 +80,9 @@ public class DanielaPrologoMovement : MonoBehaviour
         if (Environment.prologoCasaDanielaDone && !Environment.prologoCasaDanielaMovementDone)
         {
             moveDaniela();
+        }else if (Environment.prologoCasaDaniela2Done && !Environment.prologoCasaDanielaMovement2Done)
+        {
+            regresarDaniela();
         }
     }
 }
