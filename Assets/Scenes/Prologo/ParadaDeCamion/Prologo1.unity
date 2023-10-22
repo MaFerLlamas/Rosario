@@ -180,11 +180,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &72553648 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1159218739848319472, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-  m_PrefabInstance: {fileID: 1613856587}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &121239806
 GameObject:
   m_ObjectHideFlags: 0
@@ -8395,8 +8390,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: bf297a26208ec1947bd26b585f472142, type: 3}
 --- !u!1 &1218104963 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2472707257239677263, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-  m_PrefabInstance: {fileID: 1739070670}
+  m_CorrespondingSourceObject: {fileID: 7141720870648568471, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+  m_PrefabInstance: {fileID: 7141720871598199828}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1251630498
 GameObject:
@@ -24152,242 +24147,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1613856587
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1159218739932626213, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_Name
-      value: Daniela
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.3139
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.0801
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626232, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626233, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159218739932626233, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-      propertyPath: dialoguePanel
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1159218739932626233, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-    - {fileID: 5121749886818786579, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
---- !u!1001 &1739070670
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2472707257239677263, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_Name
-      value: Morgan
-      objectReference: {fileID: 0}
-    - target: {fileID: 2472707257239677300, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.58
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125874, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5207329525894125879, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-      propertyPath: m_Name
-      value: Morgan
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
---- !u!1 &1869870386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1159218739932626213, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
-  m_PrefabInstance: {fileID: 1613856587}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1869870387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869870386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baedc001250c4e14ba71a2bd0bc5e29a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueMark: {fileID: 72553648}
-  dialoguePanel: {fileID: 711444248}
-  dialogueText: {fileID: 1251630500}
-  dialogueLines:
-  - "Daniela: Capitan, \xBFc\xF3mo te fue?\r\n"
-  - "Morgan: Pues maso, vi pel\xEDculas, me dorm\xED un rato, admire el paisaje y
-    escuche m\xFAsica, ya sabes.\n"
-  - "Morgan: Sent\xED que viaje por una semana, est\xE1 medio inc\xF3modo el cami\xF3n
-    despu\xE9s de unas horas.\r\n"
-  - "Daniela: jajaja s\xED, est\xE1 hasta la goma desde la CDMX. O incluso de todos
-    lados"
-  - "Daniela:  es medio dif\xEDcil acceder al pueblo. Con eso de que no terminaron
-    la carretera directa. \r\n\n"
-  - "Daniela: Pero bueno, ya est\xE1s aqu\xED, vas a ver que te la vas a pasar agusto,
-    la capital es... un desmaye\xB4.\r\n"
-  - "Daniela:  Tanto que hacer, pero a un ritmo muy acelerado, al contrario de aqu\xED\n"
-  - "Daniela: tienes todo el tiempo del mundo. \r"
-  - "Morgan: A ver s\xED es cierto, despu\xE9s de renunciar al trabajo necesitaba
-    cambiar de aires, la neta. "
-  - "Daniela: \xBFNo se supone qu\xE9 te despidieron? "
-  - 'Morgan: Para nada, yo los deje.'
-  - "Daniela: bueno bueno jejeje, a ver si en estos d\xEDas vamos al lago a pescar\n"
-  - "Daniela: o salimos al cerro a dar la vuelta.\r"
-  - "Morgan: S\xED, estar\xEDa bien. Vemos qu\xE9 d\xEDa."
-  - "Morgan: Oye, \xBFpero la pesca no est\xE1 prohibida? la otra vez andaba viendo
-    fotos y el lago se ve bien chiquillo"
-  - "Daniela: No, est\xE1 regulada. "
-  - "Daniela: Justo estamos en la temporada de pesca, despu\xE9s de eso se deja descansar
-    unos meses."
-  - "Morgan: A, ya. Pues, v\xE1monos a la casa, \xBFno?"
-  - "Daniela: S\xED v\xE1monos, tengo que regresar a trabajar, ped\xED permiso en
-    el ayuntamiento. Sigueme"
-  - 'Morgan: Sale'
---- !u!95 &1869870388
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869870386}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1869870393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869870386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e75850800fdfd064abbb55a73e0aba2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!50 &1869870394
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869870386}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &1898784150
 GameObject:
   m_ObjectHideFlags: 0
@@ -24667,3 +24426,192 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3164276644397360876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3164276644108915678, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_Name
+      value: Daniela
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164276644108915679, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1251630500}
+    - target: {fileID: 3164276644108915679, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 711444248}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.3139
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.0801
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358361658535728288, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+--- !u!1 &3164276644397360877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3164276644108915678, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+  m_PrefabInstance: {fileID: 3164276644397360876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3164276644397360878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3164276644459164252, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
+  m_PrefabInstance: {fileID: 3164276644397360876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3164276644397360879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164276644397360877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baedc001250c4e14ba71a2bd0bc5e29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMark: {fileID: 3164276644397360878}
+  dialoguePanel: {fileID: 711444248}
+  dialogueText: {fileID: 1251630500}
+  dialogueLines:
+  - "Daniela: Capitan, \xBFc\xF3mo te fue?\r"
+  - "Morgan: Pues maso, vi pel\xEDculas, me dorm\xED un rato, admire el paisaje y
+    escuche m\xFAsica, ya sabes."
+  - "Morgan: Sent\xED que viaje por una semana, est\xE1 medio inc\xF3modo el cami\xF3n
+    despu\xE9s de unas horas.\r"
+  - "Daniela: jajaja s\xED, est\xE1 hasta la goma desde la CDMX. O incluso de todos
+    lados"
+  - "Daniela:  es medio dif\xEDcil acceder al pueblo. Con eso de que no terminaron
+    la carretera directa. \r"
+  - "Daniela: Pero bueno, ya est\xE1s aqu\xED, vas a ver que te la vas a pasar agusto,
+    la capital es... un desmaye\xB4.\r\n"
+  - "Daniela:  Tanto que hacer, pero a un ritmo muy acelerado, al contrario de aqu\xED\n"
+  - "Daniela: tienes todo el tiempo del mundo. \r"
+  - "Morgan: A ver s\xED es cierto, despu\xE9s de renunciar al trabajo necesitaba
+    cambiar de aires, la neta. "
+  - "Daniela: \xBFNo se supone qu\xE9 te despidieron? "
+  - 'Morgan: Para nada, yo los deje.'
+  - "Daniela: bueno bueno jejeje, a ver si en estos d\xEDas vamos al lago a pescar\n"
+  - "Daniela: o salimos al cerro a dar la vuelta.\r"
+  - "Morgan: S\xED, estar\xEDa bien. Vemos qu\xE9 d\xEDa."
+  - "Morgan: Oye, \xBFpero la pesca no est\xE1 prohibida? la otra vez andaba viendo
+    fotos y el lago se ve bien chiquillo"
+  - "Daniela: No, est\xE1 regulada. "
+  - "Daniela: Justo estamos en la temporada de pesca, despu\xE9s de eso se deja descansar
+    unos meses."
+  - "Morgan: A, ya. Pues, v\xE1monos a la casa, \xBFno?"
+  - "Daniela: S\xED v\xE1monos, tengo que regresar a trabajar, ped\xED permiso en
+    el ayuntamiento. Sigueme"
+  - 'Morgan: Sale'
+--- !u!114 &3164276644397360888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164276644397360877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75850800fdfd064abbb55a73e0aba2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &7141720871598199828
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.360768
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.494699
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141720870648568471, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_Name
+      value: Morgan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}

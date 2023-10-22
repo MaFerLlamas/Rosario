@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1066731410328348481, guid: bf297a26208ec1947bd26b585f472142, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 1066731410328348481, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_Name
       value: ChangeZone
       objectReference: {fileID: 0}
@@ -302,11 +306,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
---- !u!1 &1400705115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2472707257239677263, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
-  m_PrefabInstance: {fileID: 1400705114}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1680020339
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +390,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1680020343
 MonoBehaviour:
@@ -417,6 +416,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89c460fde846a5419daf9f4645e0cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTarget: {fileID: 1400705115}
+  followTarget: {fileID: 1891207654}
   targetPosition: {x: 0, y: 0, z: 0}
   cameraSpeed: 4
+--- !u!1 &1891207654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7141720870648568471, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+  m_PrefabInstance: {fileID: 1400705114}
+  m_PrefabAsset: {fileID: 0}

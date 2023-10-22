@@ -45,14 +45,14 @@ TagManager:
   - name: Background
     uniqueID: 3399994359
     locked: 0
+  - name: Middleground
+    uniqueID: 1564814347
+    locked: 0
   - name: Foreground
     uniqueID: 3197907749
     locked: 0
   - name: NPC
     uniqueID: 1187567783
-    locked: 0
-  - name: Middleground
-    uniqueID: 1564814347
     locked: 0
   - name: Player
     uniqueID: 3593789747

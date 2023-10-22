@@ -22,6 +22,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
     void Update()
     {
         if (isPlayerInRange && Input.GetButtonDown("Fire1")){
+            Debug.Log("All is wwell");
             if (!didDialogueStart){
                 startDialogue();
             }else if (dialogueText.text == dialogue[lineIndex]){
@@ -66,6 +67,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             isPlayerInRange = true;
+            Debug.Log("hello world");
             dialogueMark.SetActive(true);
         }
     }
