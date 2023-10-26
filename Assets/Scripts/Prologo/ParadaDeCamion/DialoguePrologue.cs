@@ -5,6 +5,13 @@ using TMPro;
 
 public class DialoguePrologue : MonoBehaviour
 {
+    [SerializeField] private AudioClip npcVoice;
+    [SerializeField] private AudioClip playerVoice;
+    [SerializeField] private float typingTime;
+    [SerializeField] private int charsToPlaySound;
+    [SerializeField] private bool isPlayerTalking;
+
+
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
@@ -12,11 +19,18 @@ public class DialoguePrologue : MonoBehaviour
 
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
 
-    private float typingTime = 0.05f;
+
+    private AudioSource audioSource;
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private bool didDialogueEnd;
     private int lineIndex;
+
+
+    private void Start() {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = npcVoice;
+    }
 
    
     // Update is called once per frame
@@ -82,10 +96,32 @@ public class DialoguePrologue : MonoBehaviour
         //PlayerPrefs.SetString("PreviousScene", currentSceneName);
     }
 
-    private IEnumerator ShowLine(){
+    private void SelectAudioClip()
+    {
+        if(lineIndex !=0)
+        {
+        isPlayerTalking = !isPlayerTalking;
+        }
+
+        audioSource.clip = isPlayerTalking ? playerVoice : npcVoice;
+    }
+
+    private IEnumerator ShowLine()
+    {
+        SelectAudioClip();
         dialogueText.text = string.Empty;
-        foreach(char ch in dialogueLines[lineIndex]){
+    int charIndex = 0;
+
+        foreach(char ch in dialogueLines[lineIndex])
+        {
             dialogueText.text  += ch;
+
+            if(charIndex % charsToPlaySound == 0){
+                audioSource.Play();
+            }
+
+            audioSource.Play();
+            charIndex++;
             yield return new WaitForSecondsRealtime(typingTime);
         }
     }
