@@ -10,6 +10,8 @@ public class Environment : MonoBehaviour
     public static bool prologoCasaDaniela2Done;
     public static bool prologoCasaDanielaMovement2Done;
     public static bool dialogoChesco1Done;
+    public static bool dialogoFueraFabricaAbandonadaDone;
+    public static bool dialogoDentroFabricaAbandonadaDone;
     void Start()
     {
         newSpawnName = "spawn Name";
@@ -18,6 +20,8 @@ public class Environment : MonoBehaviour
         prologoCasaDaniela2Done = false;
         prologoCasaDanielaMovement2Done=false;
         dialogoChesco1Done = false;
+        dialogoFueraFabricaAbandonadaDone = false;
+        dialogoDentroFabricaAbandonadaDone = false;
 
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
