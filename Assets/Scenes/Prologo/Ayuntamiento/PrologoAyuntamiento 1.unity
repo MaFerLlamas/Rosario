@@ -465,7 +465,7 @@ MonoBehaviour:
 '
   dialogueLines2:
   - "\" Parece estar muy concentrada en su trabajo, ser\xE1 mejor dejarla trabajar\"\r"
-  didDialogueAlreadyPast: 1
+  didDialogueAlreadyPast: 0
 --- !u!1 &263135552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3164276644459164252, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
@@ -3017,8 +3017,8 @@ MonoBehaviour:
   - "Morgan: \xBFSi?\r\n"
   - "Lic: Ver\xE1s, en la ma\xF1ana antes de entrar me compre una coquita  en esta
     nueva m\xE1quina de refrescos que se encuentra fuera del ayuntamiento. "
-  - "Lic: Pero la cosa es que esta extra\xF1a, sabe diferente y esta mal la etiqueta.\r\n
-    encuentra fuera del ayuntamiento. "
+  - "Lic: Pero la cosa es que esta extra\xF1a, sabe diferente y esta mal la etiqueta.\r\nencuentra
+    fuera del ayuntamiento. "
   - "Lic: \xBFPodr\xEDas investigar a ver si descubres algo?\r"
   - 'Morgan: La neta no soy detective o algo parecido, pero bueno. No hay mucho que
     hacer. Y estoy tratando de distraerme de mi cabeza.
