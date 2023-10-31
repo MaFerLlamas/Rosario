@@ -14,7 +14,7 @@ public class TriggerLicGlezScene : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player") && FindObjectOfType<DialogueAyuntamientoDaniela>().didDialogueAlreadyPast == true && isDialogueActive){
             FindObjectOfType<MorganController>().morganShouldMove = false;
             FindObjectOfType<LicGonzalezController>().showThoughts = true;
-            yield return new WaitForSeconds(4.0f); // Espera 2 segundos
+            yield return new WaitForSeconds(3.0f); // Espera 2 segundos
             FindObjectOfType<MorganController>().morganShouldMove = true;
             isDialogueActive=false;
         }

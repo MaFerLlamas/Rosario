@@ -53,6 +53,8 @@ public class DialogueAyuntLicGlez : MonoBehaviour
             Time.timeScale = 1f;
             didDialogueAlreadyPast=true;
             dialogue = dialogueLines2;
+            GoToNewPlace newPlace = FindObjectOfType<GoToNewPlace>();
+            newPlace.isActive = true;
         }
     }
 
@@ -67,10 +69,10 @@ public class DialogueAyuntLicGlez : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && FindObjectOfType<TriggerLicGlezScene>().isDialogueActive == false){
             Debug.Log("Enter");
             isPlayerInRange = true;
-            dialogueMark.SetActive(true);
             FindObjectOfType<LicGonzalezController>().showThoughts = false;
-            //FindObjectOfType<LicGonzalezController>().isInterrupted = true;
-            //FindObjectOfType<LicGonzalezController>().LicGonShouldMove = false;
+            dialogueMark.SetActive(true);
+            FindObjectOfType<LicGonzalezController>().isInterrupted = true;
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision){
