@@ -14,12 +14,16 @@ public class MorganController : MonoBehaviour
     private const string walkingState = "Walking";
     public bool morganShouldMove = true;
 
+    private Animator animator;
+
     public static bool isMorganCreated;
     private Rigidbody2D playerRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        animator = GetComponent<Animator>();
 
         if(!isMorganCreated){
             isMorganCreated = true;
@@ -54,5 +58,8 @@ public class MorganController : MonoBehaviour
                     playerRigidbody.velocity.x, Input.GetAxisRaw(vertical)*speed);   */
             }
         }
+
+        animator.SetFloat(horizontal, Input.GetAxisRaw(horizontal));
+        animator.SetFloat(vertical, Input.GetAxisRaw(vertical));
     }
 }

@@ -26,8 +26,12 @@ public class DialoguePrologue : MonoBehaviour
     private bool didDialogueEnd;
     private int lineIndex;
 
+    private Animator animator;
+    string horizontal = "Horizontal";
+
 
     private void Start() {
+        animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = npcVoice;
     }
@@ -85,6 +89,7 @@ public class DialoguePrologue : MonoBehaviour
 
         Rigidbody2D danielaRigidbody;
         DanielaIdentify Daniela;
+        animator.SetFloat(horizontal,1);
         Daniela = FindObjectOfType<DanielaIdentify>();
         danielaRigidbody=Daniela.GetComponent<Rigidbody2D>();
         danielaRigidbody.velocity = new Vector2(5.0f, 0);
