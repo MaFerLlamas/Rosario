@@ -17,7 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologo/CasaDeDaniela/PrologoCasaDaniela0.unity
     guid: b1c14e9fe08e3ae44b6faeed36dd4292
+  - enabled: 
+    path: Assets/Scenes/Prologo/CasaDeDaniela/PrologoCasaDaniela.unity
+    guid: 4383b4e0a3504d647a2bacffcee71398
   - enabled: 1
     path: Assets/Scenes/MundoAbierto.unity
-    guid: 8362bcf916d2d6b4897b0d9457db9fa2
+    guid: 4249d10b2358e8741b0896c5f9fba6a1
+  - enabled: 1
+    path: Assets/Scenes/Interiores/FabricaAbandonada.unity
+    guid: 3bd99d47dd428fa4785837bd5a30c7a4
+  - enabled: 1
+    path: Assets/Scenes/Prologo/Ayuntamiento/PrologoAyuntamiento.unity
+    guid: e9cb515550cda484dbb8db30cb636db8
   m_configObjects: {}
