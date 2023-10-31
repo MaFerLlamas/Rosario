@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologo/CasaDeDaniela/PrologoCasaDaniela0.unity
     guid: b1c14e9fe08e3ae44b6faeed36dd4292
-  - enabled: 1
+  - enabled: 
     path: Assets/Scenes/Prologo/CasaDeDaniela/PrologoCasaDaniela.unity
     guid: 4383b4e0a3504d647a2bacffcee71398
   - enabled: 1
