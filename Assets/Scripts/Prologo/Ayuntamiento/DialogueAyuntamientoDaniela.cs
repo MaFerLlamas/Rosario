@@ -15,7 +15,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
     private bool didDialogueStart;
-    public bool didDialogueAlreadyPast;
+    
     private int lineIndex;
 
     // Update is called once per frame
@@ -33,12 +33,15 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
         }
     }
     private void startDialogue(){
-            didDialogueStart = true;
-            dialoguePanel.SetActive(true);
-            dialogueMark.SetActive(false);
-            if (didDialogueAlreadyPast) lineIndex = dialogue.Length - 1; else dialogue = dialogueLines;
-            Time.timeScale = 0f;
-            StartCoroutine(ShowLine());
+        didDialogueStart = true;
+        dialoguePanel.SetActive(true);
+        dialogueMark.SetActive(false);
+        if (Environment.didDialogueAlreadyPast){
+            dialogue = dialogueLines2;
+            lineIndex = dialogue.Length - 1;
+        }else dialogue = dialogueLines;
+        Time.timeScale = 0f;
+        StartCoroutine(ShowLine());
     }
 
     private void nextDialogueLine(){
@@ -51,8 +54,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            didDialogueAlreadyPast=true;
-            dialogue = dialogueLines2;
+            Environment.didDialogueAlreadyPast =true;
         }
     }
 
