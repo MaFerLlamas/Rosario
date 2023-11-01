@@ -22,6 +22,14 @@ public class Environment : MonoBehaviour
     public static bool dialogoDentroFabricaAbandonadaDone;
     public static bool dialogoAyuntamientoLicDone;
     //banderas 5 algo que hacer
+    public static bool algoQueHacerStart;
+    public static bool dialogoDanielaAlgoQueHacerDone;
+    public static bool visitedCementerio;
+    public static bool visitedCerro;
+    public static bool visitedGasolinera;
+    public static bool visitedGranja;
+    public static bool visitedLago;
+    public static bool visitedCamping;
     void Start()
     {
         camara = FindObjectOfType<CameraFollow>();
@@ -31,7 +39,7 @@ public class Environment : MonoBehaviour
         prologoCasaDanielaDone = false;
         prologoCasaDanielaMovementDone = false;
         prologoCasaDaniela2Done = false;
-        prologoCasaDanielaMovement2Done=false;
+        prologoCasaDanielaMovement2Done = false;
 
         //3 escena del ayuntamiento
         didDialogueAlreadyPast = false;
@@ -42,6 +50,17 @@ public class Environment : MonoBehaviour
         dialogoFueraFabricaAbandonadaDone = false;
         dialogoDentroFabricaAbandonadaDone = false;
         dialogoAyuntamientoLicDone = false;
+
+        //5 algo que hacer
+        algoQueHacerStart = false;
+        dialogoDanielaAlgoQueHacerDone = false;
+        visitedCementerio = false;
+        visitedCerro = false;
+        visitedGasolinera = false;
+        visitedGranja = false;
+        visitedLago = false;
+        visitedCamping = false;
+
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
          * aqui abajo estaran las modificaciones correspondientes para que no tengan que pasar todo el juego"
@@ -49,7 +68,40 @@ public class Environment : MonoBehaviour
         //didDialogueAlreadyPast = true;
         //didDialogueAlreadyPastGlz = true;
         //dialogoDentroFabricaAbandonadaDone = true;
-        //fin de testings
 
-}
+        //visitedCementerio = true;
+        //visitedCerro = true;
+        //visitedGasolinera = true;
+        //visitedGranja = true;
+        //visitedLago = true;
+        //visitedCamping = true;
+
+    }
+        public static void VisitedPlace(string place)
+    {
+        switch (place)
+        {
+            case "Cementerio":
+                Environment.visitedCementerio = true; break;
+            case "Cerro":
+                Environment.visitedCerro = true; break;
+            case "Gasolinera":
+                Environment.visitedGasolinera = true;  break;
+            case "Granja":
+                Environment.visitedGranja = true;  break;
+            case "Lago":
+                Environment.visitedLago = true; break;
+            case "Zona de camping":
+                Environment.visitedCamping = true;  break;
+            default:
+                Debug.Log("unkwnown place, not registred");
+                break;
+        }
+    }
+
+    public static bool algoQueHacerVisitsDone()
+    {
+        //Debug.Log(visitedCementerio + "/" + visitedCerro + "/" + visitedGasolinera + "/" + visitedGranja + "/" + visitedLago + "/" + visitedCamping);
+        return visitedCementerio && visitedCerro && visitedGasolinera && visitedGranja && visitedLago && visitedCamping;
+    }
 }

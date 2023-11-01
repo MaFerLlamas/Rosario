@@ -11,6 +11,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
     private string[] dialogue;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines2;
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLines3; //dialogo: algo que hacer
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
@@ -36,7 +37,13 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
         dialogueMark.SetActive(false);
-        if (Environment.didDialogueAlreadyPast){
+        lineIndex = 0;
+        if (Environment.algoQueHacerStart)
+        {
+            dialogue = dialogueLines3;
+            if (Environment.dialogoDanielaAlgoQueHacerDone) lineIndex = dialogue.Length - 1;
+        }
+        else if (Environment.didDialogueAlreadyPast){
             dialogue = dialogueLines2;
             lineIndex = dialogue.Length - 1;
         }else dialogue = dialogueLines;
@@ -55,6 +62,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             Environment.didDialogueAlreadyPast =true;
+            if(Environment.algoQueHacerStart) Environment.dialogoDanielaAlgoQueHacerDone = true;
         }
     }
 

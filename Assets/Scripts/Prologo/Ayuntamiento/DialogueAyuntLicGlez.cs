@@ -61,7 +61,11 @@ public class DialogueAyuntLicGlez : MonoBehaviour
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             Environment.didDialogueAlreadyPastGlz = true;
-            if (Environment.dialogoDentroFabricaAbandonadaDone) Environment.dialogoAyuntamientoLicDone=true;
+            if (Environment.dialogoDentroFabricaAbandonadaDone)
+            {
+                Environment.dialogoAyuntamientoLicDone = true;
+                Environment.algoQueHacerStart = true;
+            }
             GoToNewPlace newPlace = FindObjectOfType<GoToNewPlace>();
             newPlace.isActive = true;
         }

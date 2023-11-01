@@ -29,5 +29,6 @@ public class TriggerLicGlezScene : MonoBehaviour
         {
             isDialogueActive = false;
         }
+        
     }
 }

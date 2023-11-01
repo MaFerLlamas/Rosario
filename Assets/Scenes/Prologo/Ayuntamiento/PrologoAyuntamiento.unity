@@ -465,6 +465,13 @@ MonoBehaviour:
 '
   dialogueLines2:
   - "\" Parece estar muy concentrada en su trabajo, ser\xE1 mejor dejarla trabajar\"\r"
+  dialogueLines3:
+  - "Daniela: \xBFQu\xE9 pasa Cap?"
+  - "Morgan: Hice un recado para el Lic, creo que regresar\xE9 a la casa"
+  - "Daniela: \xBFpor qu\xE9 no vas a conocer el resto de Rosario y sus alrededores?"
+  - 'Daniela: ahora que saliste de la cueva'
+  - "Morgan: Podr\xEDa ser, creo que s\xED me da huevita regresar a la casa"
+  - 'Daniela: Avientate una vuelta y nos vemos al rato que salga de trabajar'
 --- !u!1 &263135552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3164276644459164252, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}
@@ -3262,6 +3269,7 @@ GameObject:
   - component: {fileID: 1258256331}
   - component: {fileID: 1258256332}
   - component: {fileID: 1258256333}
+  - component: {fileID: 1258256334}
   m_Layer: 8
   m_Name: TriggerLicGlez
   m_TagString: Untagged
@@ -3323,6 +3331,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDialogueActive: 1
+--- !u!114 &1258256334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258256329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74ff5c3e09400d418ba58046c9a2c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMark: {fileID: 1955110752}
+  dialoguePanel: {fileID: 1981611810}
+  dialogueText: {fileID: 1981611809}
+  dialogueLines:
+  - "\u201C Tal vez deber\xEDa de hablar con mi prima Daniela \u201D"
 --- !u!1 &1259884014
 GameObject:
   m_ObjectHideFlags: 0
