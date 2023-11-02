@@ -11,11 +11,12 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
     private string[] dialogue;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines2;
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLines3; //dialogo: algo que hacer
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
     private bool didDialogueStart;
-    public bool didDialogueAlreadyPast;
+    
     private int lineIndex;
 
     // Update is called once per frame
@@ -33,12 +34,21 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
         }
     }
     private void startDialogue(){
-            didDialogueStart = true;
-            dialoguePanel.SetActive(true);
-            dialogueMark.SetActive(false);
-            if (didDialogueAlreadyPast) lineIndex = dialogue.Length - 1; else dialogue = dialogueLines;
-            Time.timeScale = 0f;
-            StartCoroutine(ShowLine());
+        didDialogueStart = true;
+        dialoguePanel.SetActive(true);
+        dialogueMark.SetActive(false);
+        lineIndex = 0;
+        if (Environment.algoQueHacerStart)
+        {
+            dialogue = dialogueLines3;
+            if (Environment.dialogoDanielaAlgoQueHacerDone) lineIndex = dialogue.Length - 1;
+        }
+        else if (Environment.didDialogueAlreadyPast){
+            dialogue = dialogueLines2;
+            lineIndex = dialogue.Length - 1;
+        }else dialogue = dialogueLines;
+        Time.timeScale = 0f;
+        StartCoroutine(ShowLine());
     }
 
     private void nextDialogueLine(){
@@ -51,8 +61,8 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            didDialogueAlreadyPast=true;
-            dialogue = dialogueLines2;
+            Environment.didDialogueAlreadyPast =true;
+            if(Environment.algoQueHacerStart) Environment.dialogoDanielaAlgoQueHacerDone = true;
         }
     }
 

@@ -11,11 +11,11 @@ public class DialogueAyuntLicGlez : MonoBehaviour
     private string[] dialogue;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines2;
+    [SerializeField, TextArea(4,6)] private string[] dialogueLines3;
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
     private bool didDialogueStart;
-    public bool didDialogueAlreadyPast;
     private int lineIndex;
 
     // Update is called once per frame
@@ -33,12 +33,21 @@ public class DialogueAyuntLicGlez : MonoBehaviour
         }
     }
     private void startDialogue(){
-            didDialogueStart = true;
-            dialoguePanel.SetActive(true);
-            dialogueMark.SetActive(false);
-            if (didDialogueAlreadyPast) lineIndex = dialogue.Length - 1; else dialogue = dialogueLines;
-            Time.timeScale = 0f;
-            StartCoroutine(ShowLine());
+        didDialogueStart = true;
+        dialoguePanel.SetActive(true);
+        dialogueMark.SetActive(false);
+        lineIndex = 0;
+        if (Environment.dialogoDentroFabricaAbandonadaDone)
+        {
+            dialogue = dialogueLines3;
+            if(Environment.dialogoAyuntamientoLicDone) lineIndex = dialogue.Length - 1;
+        }else if (Environment.didDialogueAlreadyPastGlz)
+        {
+            dialogue = dialogueLines2;
+            lineIndex = dialogue.Length - 1;
+        }else dialogue = dialogueLines;
+        Time.timeScale = 0f;
+        StartCoroutine(ShowLine());
     }
 
     private void nextDialogueLine(){
@@ -51,8 +60,12 @@ public class DialogueAyuntLicGlez : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            didDialogueAlreadyPast=true;
-            dialogue = dialogueLines2;
+            Environment.didDialogueAlreadyPastGlz = true;
+            if (Environment.dialogoDentroFabricaAbandonadaDone)
+            {
+                Environment.dialogoAyuntamientoLicDone = true;
+                Environment.algoQueHacerStart = true;
+            }
             GoToNewPlace newPlace = FindObjectOfType<GoToNewPlace>();
             newPlace.isActive = true;
         }
@@ -80,7 +93,8 @@ public class DialogueAyuntLicGlez : MonoBehaviour
             Debug.Log("Exit");
             isPlayerInRange = false;
             dialogueMark.SetActive(false);
-            FindObjectOfType<LicGonzalezController>().showThoughts = true;
+            if (Environment.didDialogueAlreadyPast && !Environment.dialogoDentroFabricaAbandonadaDone && !Environment.didDialogueAlreadyPastGlz) { 
+                FindObjectOfType<LicGonzalezController>().showThoughts = true; }
         }
     }
 }

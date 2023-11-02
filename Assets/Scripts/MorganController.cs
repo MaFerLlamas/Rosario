@@ -37,6 +37,15 @@ public class MorganController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 20.0f;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 4.0f;
+        }
+
         if (morganShouldMove){
             // s = v*t; espacio = velocidad por tiempo
             /*espacio que hay que mover el personaje es producto de la 

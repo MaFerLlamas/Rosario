@@ -41,34 +41,34 @@ public class DanielaPrologoMovement : MonoBehaviour
         if (this.transform.position.x > -2.5 && this.transform.position.x < -1.5 && this.transform.position.y > -2 && this.transform.position.y < -1)
         {
             danielaRigidbody.velocity = new Vector2(0, -VELOCITY); //down
-            Debug.Log("step 1");
+            //Debug.Log("step 1");
         }
         else if (daniela.transform.position.x > -2.5 && daniela.transform.position.x < 4 && daniela.transform.position.y > -4.6f && daniela.transform.position.y < -3.5f)
         {
             danielaRigidbody.velocity = new Vector2(VELOCITY, 0); //right
-            Debug.Log("step 2");
+            //Debug.Log("step 2");
         }
         else if (daniela.transform.position.x > 4 && daniela.transform.position.x < 5 && daniela.transform.position.y > -4.5f && daniela.transform.position.y < -3.5f)
         {
             danielaRigidbody.velocity = new Vector2(0, VELOCITY); //up
-            Debug.Log("step 3");
+            //Debug.Log("step 3");
         }
         else if (daniela.transform.position.x > 4 && daniela.transform.position.x < 5 && daniela.transform.position.y > -2.6f && daniela.transform.position.y < -1.6f)
         {
             danielaRigidbody.velocity = new Vector2(VELOCITY, 0); //right
-            Debug.Log("step 4");
+            //Debug.Log("step 4");
         }
         else if (daniela.transform.position.x > 8 && daniela.transform.position.x < 9 && daniela.transform.position.y > -2.6f && daniela.transform.position.y < -1.6f)
         {
             danielaRigidbody.velocity = new Vector2(0, -VELOCITY); //down
-            Debug.Log("step 5");
+            //Debug.Log("step 5");
         }
         else if (this.transform.position.x > 8 && this.transform.position.x < 9 && this.transform.position.y > -4.5 && this.transform.position.y < -3.5)
         {
             danielaRigidbody.velocity = new Vector2(VELOCITY, 0); //right
             FindObjectOfType<MorganController>().morganShouldMove = true;
             Environment.prologoCasaDanielaMovement2Done = true;
-            Debug.Log("finish");
+            //Debug.Log("finish");
             //Environment.prologoCasaDanielaDone = false;
         }
     }
