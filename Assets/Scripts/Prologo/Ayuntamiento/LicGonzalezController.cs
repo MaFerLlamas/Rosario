@@ -19,12 +19,21 @@ public class LicGonzalezController : MonoBehaviour
     private float journeyLength;
     private float startTime;
 
+    private const string horizontal = "Horizontal";
+    private const string vertical = "Vertical";
+
     public bool LicGonShouldMove = false; 
     public bool isInterrupted = false; 
     public bool isInterrupted2 = false; 
     public bool showThoughts= false; 
 
+    private Animator animator;
+    private bool Swap = false;
+
     void Start(){
+        
+    animator = GetComponent<Animator>();
+
         currentStart = startPosition;
         currentTarget = endPosition.position;
         journeyLength = Vector2.Distance(startPosition.position, endPosition.position);
@@ -48,6 +57,8 @@ public class LicGonzalezController : MonoBehaviour
             // Swap the target position when reaching the current target.
             if (currentTarget == (Vector2)endPosition.position)
             {
+                
+
                 if (showThoughts){
                     dialogueMark1.SetActive(true);
                     dialogueMark2.SetActive(false);
@@ -58,7 +69,23 @@ public class LicGonzalezController : MonoBehaviour
 
                 if (isInterrupted){
                     LicGonShouldMove = false;
-                }else{
+                }
+                else
+                {
+                    if (Swap)
+                {
+
+                    animator.SetFloat(horizontal, -1);
+                    animator.SetFloat(vertical, 0);
+
+                }
+
+                 else
+                {
+                     animator.SetFloat(horizontal, 1);
+                     animator.SetFloat(vertical, 0);
+                }
+                 Swap = !Swap;
                     currentTarget = startPosition.position;
                     currentStart = endPosition;
                 }
@@ -72,6 +99,20 @@ public class LicGonzalezController : MonoBehaviour
                     dialogueMark1.SetActive(false);
                     dialogueMark2.SetActive(false);
                 }
+                if (Swap)
+                {
+
+                    animator.SetFloat(horizontal, -1);
+                    animator.SetFloat(vertical, 0);
+
+                }
+
+                 else
+                {
+                     animator.SetFloat(horizontal, 1);
+                     animator.SetFloat(vertical, 0);
+                }
+                 Swap = !Swap;
                     currentTarget = endPosition.position;
                     currentStart = startPosition;
             }
