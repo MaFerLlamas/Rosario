@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 384497204}
   - component: {fileID: 384497206}
   - component: {fileID: 384497207}
+  - component: {fileID: 384497208}
   m_Layer: 0
   m_Name: Maricela Carillo
   m_TagString: Untagged
@@ -694,6 +695,27 @@ MonoBehaviour:
   - 'Marisela: Vamos, dile
 
 '
+--- !u!95 &384497208
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384497203}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e9af108879deeb4a98610dac3dc3014, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &401216524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1356,7 @@ GameObject:
   - component: {fileID: 692907682}
   - component: {fileID: 692907684}
   - component: {fileID: 692907685}
+  - component: {fileID: 692907686}
   m_Layer: 0
   m_Name: Mauricio Espinoza
   m_TagString: Untagged
@@ -1452,6 +1475,27 @@ MonoBehaviour:
   dialogueText: {fileID: 1892739889}
   dialogueLines:
   - ' . . .'
+--- !u!95 &692907686
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692907681}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 961ecbf5dfb394a428812c01059acf8f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &697097412
 GameObject:
   m_ObjectHideFlags: 0
