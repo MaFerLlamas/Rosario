@@ -30,6 +30,9 @@ public class Environment : MonoBehaviour
     public static bool visitedGranja;
     public static bool visitedLago;
     public static bool visitedCamping;
+
+    //banderas escenaFinal
+    public static bool dialogoDanielaFinalDone;
     void Start()
     {
         camara = FindObjectOfType<CameraFollow>();
@@ -61,6 +64,9 @@ public class Environment : MonoBehaviour
         visitedLago = false;
         visitedCamping = false;
 
+        //6 final
+        dialogoDanielaFinalDone =false;
+
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
          * aqui abajo estaran las modificaciones correspondientes para que no tengan que pasar todo el juego"
@@ -69,12 +75,14 @@ public class Environment : MonoBehaviour
         //didDialogueAlreadyPastGlz = true;
         //dialogoDentroFabricaAbandonadaDone = true;
 
-        //visitedCementerio = true;
-        //visitedCerro = true;
-        //visitedGasolinera = true;
-        //visitedGranja = true;
-        //visitedLago = true;
-        //visitedCamping = true;
+        /*
+        visitedCementerio = true;
+        visitedCerro = true;
+        visitedGasolinera = true;
+        visitedGranja = true;
+        visitedLago = true;
+        visitedCamping = true;
+        */
 
     }
         public static void VisitedPlace(string place)

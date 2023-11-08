@@ -21,6 +21,7 @@ public class shadowing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            this.transform.position = new Vector2(Environment.morgan.transform.position.x, Environment.morgan.transform.position.y);
         if (Environment.prologoCasaDanielaMovement2Done)
         {
             if(darkness < 255f && !dark)
@@ -29,7 +30,7 @@ public class shadowing : MonoBehaviour
                 this.GetComponent<Renderer>().material.color = new Color(0,0,0,darkness/255);
             }else if(dark && clarity<255)
             {
-                Debug.Log(clarity);
+                //Debug.Log(clarity);
                 clarity += 100 * Time.deltaTime;
                 this.GetComponent<Renderer>().material.color = new Color(clarity/255, clarity/255, clarity/255, darkness / 255);
             }
