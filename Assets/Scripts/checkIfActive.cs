@@ -12,6 +12,10 @@ public class checkIfActive : MonoBehaviour
             GoToNewPlace MundoAbierto = FindObjectOfType<GoToNewPlace>();
             MundoAbierto.isActive = false;
         }
+        else
+        {
+            Destroy(FindObjectOfType<DialogueDanielaCasaDaniela>().gameObject);
+        }
     }
 
 }
