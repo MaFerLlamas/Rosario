@@ -2838,6 +2838,7 @@ GameObject:
   - component: {fileID: 1123758475}
   - component: {fileID: 1123758477}
   - component: {fileID: 1123758479}
+  - component: {fileID: 1123758480}
   m_Layer: 0
   m_Name: "Lic G\xF3nzalez"
   m_TagString: Untagged
@@ -3048,6 +3049,27 @@ MonoBehaviour:
 
 '
   - "Lic: Y un chesco s\xED quieres, toma el del escritorio\r"
+--- !u!95 &1123758480
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123758471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d9592c03a110514a8115c477b51bb12, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1124799479
 GameObject:
   m_ObjectHideFlags: 0
