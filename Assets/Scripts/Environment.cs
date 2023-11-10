@@ -9,12 +9,15 @@ public class Environment : MonoBehaviour
     public static MorganController morgan;
     public static string newSpawnName;
     //banderas 2, casa de daniela
+    // Quest 0
     public static bool prologoCasaDanielaDone;
     public static bool prologoCasaDanielaMovementDone;
     public static bool prologoCasaDaniela2Done;
     public static bool prologoCasaDanielaMovement2Done;
     //banderas 3 escena del ayuntamiento
+    // Quest 1
     public static bool didDialogueAlreadyPast;
+    public static bool didLicThoughtsPast;
     public static bool didDialogueAlreadyPastGlz;
     //banderas 4 y ahora que
     public static bool dialogoChesco1Done;
