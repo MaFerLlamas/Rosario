@@ -25,7 +25,6 @@ public class LicGonzalezController : MonoBehaviour
     public bool LicGonShouldMove = false; 
     public bool isInterrupted = false; 
     public bool isInterrupted2 = false; 
-    public bool showThoughts= false; 
 
     private Animator animator;
     private bool Swap = false;
@@ -59,14 +58,6 @@ public class LicGonzalezController : MonoBehaviour
             {
                 
 
-                if (showThoughts){
-                    dialogueMark1.SetActive(true);
-                    dialogueMark2.SetActive(false);
-                } else {
-                    dialogueMark1.SetActive(false);
-                    dialogueMark2.SetActive(false);
-                }
-
                 if (isInterrupted){
                     LicGonShouldMove = false;
                 }
@@ -92,13 +83,6 @@ public class LicGonzalezController : MonoBehaviour
             }
             else
             {
-                if(showThoughts){
-                    dialogueMark1.SetActive(false);
-                    dialogueMark2.SetActive(true);
-                } else {
-                    dialogueMark1.SetActive(false);
-                    dialogueMark2.SetActive(false);
-                }
                 if (Swap)
                 {
 

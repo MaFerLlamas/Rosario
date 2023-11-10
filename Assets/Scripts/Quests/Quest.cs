@@ -19,10 +19,10 @@ public class Quest : MonoBehaviour
     }
     public void startQuest(){
         manager = FindObjectOfType<QuestManager>();
-        manager.showQuestText(completeText);
+        manager.showQuestText(sartText);
     }
     public void CompleteQuest(){
-        manager.showQuestText(sartText);
+        manager.showQuestText(completeText);
         manager.questCompleted[questID] = true;
         gameObject.SetActive(false);
     }

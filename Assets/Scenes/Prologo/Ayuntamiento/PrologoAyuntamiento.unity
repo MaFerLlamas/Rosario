@@ -442,11 +442,11 @@ MonoBehaviour:
   - "Daniela: Hola, s\xED veniste"
   - "Morgan: S\xED, es que estaba haciendo un buen de calor en la casa, y aparte
     ya me hab\xEDa aburrido\r\n"
-  - "Daniela: Bueno, aqu\xED tampoco hay mucho que hacer, hasta hace unos d\xEDas.\r\nSe
-    enteraron de que el trabajo escaseaba\r\n"
-  - "Daniela: y de igual manera percibimos nuestro salario, as\xED que nos mandaron
-    chamba de otros lugares. Digo, no me quejo, al menos as\xED se pasa m\xE1s r\xE1pido
-    el d\xEDa\r\n\n"
+  - "Daniela: Bueno, aqu\xED tampoco hay mucho que hacer, hasta hace unos d\xEDas.\r "
+  - 'Daniela: Se enteraron de que el trabajo escaseaba y de igual manera percibimos
+    nuestro salario'
+  - "Daniela: as\xED que nos mandaron chamba de otros lugares. "
+  - "Daniela: Digo, no me quejo, al menos as\xED se pasa m\xE1s r\xE1pido el d\xEDa\r\n"
   - 'Morgan: jajaja que hueva, ya que'
   - "Daniela: \xBFQuieres ayudarme con algo de papeleo?. as\xED te desenfadadas"
   - 'Morgan: La verdad es que no tanto
@@ -774,139 +774,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33315158, y: 1.5391537}
   m_EdgeRadius: 0
---- !u!1 &532906803
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 532906807}
-  - component: {fileID: 532906804}
-  - component: {fileID: 532906806}
-  - component: {fileID: 532906808}
-  m_Layer: 0
-  m_Name: 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &532906804
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532906803}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1187567783
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9279d26d30d68c24fbca5349665e66f1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 3.2, y: 3.2}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!222 &532906806
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532906803}
-  m_CullTransparentMesh: 1
---- !u!224 &532906807
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532906803}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.86715966, y: 0.89740944, z: 0.93363446}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1123758473}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.145, y: 0.538}
-  m_SizeDelta: {x: 3.2, y: 3.2}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &532906808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532906803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: lp[[l[pl
 --- !u!1 &602945745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,90 +2594,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &961676417
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 961676418}
-  - component: {fileID: 961676419}
-  m_Layer: 0
-  m_Name: 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &961676418
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961676417}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.009, y: 0.591, z: 0}
-  m_LocalScale: {x: 0.7431262, y: 0.80553985, z: 0.7154194}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1123758473}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &961676419
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961676417}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1187567783
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6ce255fc2f71aa34399768216eca1a15, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1.1875}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1086725742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,6 +2696,7 @@ GameObject:
   - component: {fileID: 1123758477}
   - component: {fileID: 1123758479}
   - component: {fileID: 1123758480}
+  - component: {fileID: 1123758481}
   m_Layer: 0
   m_Name: "Lic G\xF3nzalez"
   m_TagString: Untagged
@@ -2985,8 +2769,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1955110754}
-  - {fileID: 532906807}
-  - {fileID: 961676418}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3056,13 +2838,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 433113410}
   endPosition: {fileID: 1284374748}
-  dialogueMark1: {fileID: 532906803}
-  dialogueMark2: {fileID: 961676417}
+  dialogueMark1: {fileID: 0}
+  dialogueMark2: {fileID: 0}
   speed: 2
   LicGonShouldMove: 1
   isInterrupted: 0
   isInterrupted2: 0
-  showThoughts: 0
 --- !u!114 &1123758479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3078,26 +2859,37 @@ MonoBehaviour:
   dialogueMark: {fileID: 1955110752}
   dialoguePanel: {fileID: 1981611810}
   dialogueText: {fileID: 1981611809}
+  dialogueLines0:
+  - "Lic: Ahora s\xED ya vali\xF3, mi mujer\u2026"
+  - 'Lic: Que voy a hacer sin ella. Al fin le colme la paciencia.'
   dialogueLines:
   - 'Lic: Aaa, Hola. Debes de ser el primo de Daniela'
   - "Morgan: S\xED, me dijo que hablara contigo a ver si ten\xEDas algo en lo que
     pudiera ayudar\r\n"
   - "Lic: Pues la verdad es que no hay mucho, la chamba que nos lleg\xF3 nos est\xE1
-    costando sacarla, porque resulta que no sabemos ni un carajo de los problemas
-    de la capital"
-  - "Lic: y nos los mandan en forma de papeleo. \r\nAs\xED que no creo que haya nada
-    en lo que nos puedas ayudar.\r\n"
+    costando sacarla "
+  - 'Lic: porque resulta que no sabemos ni un carajo de los problemas de la capital.
+
+'
+  - "Lic: y nos los mandan en forma de papeleo. \r\n"
+  - "Lic: As\xED que no creo que haya nada en lo que nos puedas ayudar.\r\n"
   - 'Morgan: Ni modo'
-  - "Lic: \u2026\r\nSabes qu\xE9, s\xED hay algo en lo que me puedes ayudar, no creo
-    que sea la gran cosa pero seguro puedes sacar una explicaci\xF3n a todo esto.\r\n"
+  - 'Lic: ....
+
+'
+  - "Lic: Sabes qu\xE9, s\xED hay algo en lo que me puedes ayudar"
+  - "Lic: no creo que sea la gran cosa pero seguro puedes sacar una explicaci\xF3n
+    a todo esto.\r\n"
   - "Morgan: \xBFSi?\r\n"
-  - "Lic: Ver\xE1s, en la ma\xF1ana antes de entrar me compre una coquita  en esta
-    nueva m\xE1quina de refrescos que se encuentra fuera del ayuntamiento. "
-  - "Lic: Pero la cosa es que esta extra\xF1a, sabe diferente y esta mal la etiqueta.\r\nencuentra
-    fuera del ayuntamiento. "
+  - "Lic: Ver\xE1s, En la ma\xF1ana antes de entrar me compre una coquita\n"
+  - "Lic:  en esta nueva m\xE1quina de refrescos que se encuentra fuera del ayuntamiento.
+    \n"
+  - "Lic: Pero la cosa es que esta extra\xF1a, sabe diferente y esta mal la etiqueta.\r\n "
   - "Lic: \xBFPodr\xEDas investigar a ver si descubres algo?\r"
-  - 'Morgan: La neta no soy detective o algo parecido, pero bueno. No hay mucho que
-    hacer. Y estoy tratando de distraerme de mi cabeza.
+  - 'Morgan: La neta no soy detective o algo parecido, pero bueno.
+
+'
+  - 'Morgan: No hay mucho que hacer. Y estoy tratando de distraerme de mi cabeza.
 
 '
   - 'Lic: Nada mejor que chambear, si descubres algo te vas a ganar una lanita
@@ -3110,7 +2902,7 @@ MonoBehaviour:
 
 '
   dialogueLines2:
-  - ' Buena suerte joven !!!'
+  - ' Lic: Buena suerte joven !!!'
   dialogueLines3:
   - "Lic: \xBFQu\xE9 tal va?\r\n"
   - "Morgan: Que cambiar\xE1n el lote, aunque no entend\xED mucho qu\xE9 sucedi\xF3\r\n\n"
@@ -3123,6 +2915,7 @@ MonoBehaviour:
 
 '
   - "Lic: Y un chesco s\xED quieres, toma el del escritorio\r"
+  isPlayerInRange: 0
 --- !u!95 &1123758480
 Animator:
   serializedVersion: 5
@@ -3144,6 +2937,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1123758481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123758471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af743174c6196bf4fb79bd781350e08b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 1
+  startPoint: 1
+  endPoint: 0
 --- !u!1 &1124799479
 GameObject:
   m_ObjectHideFlags: 0
@@ -6315,8 +6123,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955110752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.216, y: 0.48, z: 0}
-  m_LocalScale: {x: 0.24995133, y: 0.24995133, z: 0.24995133}
+  m_LocalPosition: {x: 0.59, y: 1.26, z: 0}
+  m_LocalScale: {x: 0.5591411, y: 0.5591411, z: 0.5591411}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1123758473}
