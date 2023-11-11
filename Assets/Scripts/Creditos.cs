@@ -5,6 +5,9 @@ using UnityEngine;
 public class Creditos : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
+    //escnea prologo Casa Daniela
+    [SerializeField] Sprite MasTarde;
+    //escena Final
     [SerializeField] Sprite pensamientos1;
     [SerializeField] Sprite pensamientos2;
     [SerializeField] Sprite pensamientos3;
@@ -30,13 +33,15 @@ public class Creditos : MonoBehaviour
 
         timer = 0.0f;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = pensamientos1;
+        //spriteRenderer.sprite = pensamientos1;
+
+        spriteRenderer.sprite = Environment.algoQueHacerVisitsDone() ? pensamientos1 : MasTarde;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Environment.dialogoDanielaFinalDone)
+        if (Environment.dialogoDanielaFinalDone || Environment.prologoCasaDanielaDialogo2EscenasDone && !Environment.prologoCasaDaniela4PM)
         {
             this.transform.position = new Vector2(Environment.morgan.transform.position.x, Environment.morgan.transform.position.y);
             if (darkness < 255f && !dark)
@@ -54,7 +59,7 @@ public class Creditos : MonoBehaviour
                 dark = true;
                 //obscuridad = 0;
             }
-            if (clarity > 254)
+            if (clarity > 254 && Environment.dialogoDanielaFinalDone)
             {
                 timer += Time.deltaTime / segundosEntreFrame; //modificar este valor para incrementar segundos entre frame
                 if (timer > 1.0f && timer < 2.0f)
@@ -80,6 +85,13 @@ public class Creditos : MonoBehaviour
                 {
                     spriteRenderer.sprite = creditosFinal;
                 }
+            }
+            else if (clarity > 254)
+            {
+                //cambiar escnea
+                Environment.prologoCasaDaniela4PM = true;
+                Environment.newSpawnName = "WC";
+                UnityEngine.SceneManagement.SceneManager.LoadScene("PrologoCasaDaniela");
             }
         }
     }

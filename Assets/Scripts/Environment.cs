@@ -14,6 +14,8 @@ public class Environment : MonoBehaviour
     public static bool prologoCasaDanielaMovementDone;
     public static bool prologoCasaDaniela2Done;
     public static bool prologoCasaDanielaMovement2Done;
+    public static bool prologoCasaDanielaDialogo2EscenasDone;
+    public static bool prologoCasaDaniela4PM;
     //banderas 3 escena del ayuntamiento
     // Quest 1
     public static bool didDialogueAlreadyPast;
@@ -36,6 +38,13 @@ public class Environment : MonoBehaviour
 
     //banderas escenaFinal
     public static bool dialogoDanielaFinalDone;
+
+    //banderas Misiones secundarias
+    public static bool habloJose;
+    public static bool tieneFotoJose;
+    public static bool habloDiana;
+    public static bool habloJoseFinal;
+    public static bool habloDianaFinal;
     void Start()
     {
         camara = FindObjectOfType<CameraFollow>();
@@ -46,6 +55,8 @@ public class Environment : MonoBehaviour
         prologoCasaDanielaMovementDone = false;
         prologoCasaDaniela2Done = false;
         prologoCasaDanielaMovement2Done = false;
+        prologoCasaDanielaDialogo2EscenasDone=false;
+        prologoCasaDaniela4PM = false;
 
         //3 escena del ayuntamiento
         didDialogueAlreadyPast = false;
@@ -69,7 +80,14 @@ public class Environment : MonoBehaviour
 
         //6 final
         dialogoDanielaFinalDone =false;
+        
 
+        //Misiones secundarias
+        habloJose=false;
+        tieneFotoJose = false;
+        habloDiana = false;
+        habloJoseFinal = false;
+        habloDianaFinal = false;
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
          * aqui abajo estaran las modificaciones correspondientes para que no tengan que pasar todo el juego"

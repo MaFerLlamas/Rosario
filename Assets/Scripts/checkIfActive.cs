@@ -7,14 +7,17 @@ public class checkIfActive : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Environment.algoQueHacerVisitsDone())
+        GoToNewPlace mundoAbierto = this.gameObject.GetComponent<GoToNewPlace>(); //FindObjectOfType<GoToNewPlace>();
+        bool visitsDone = Environment.algoQueHacerVisitsDone();
+        if (visitsDone || !Environment.prologoCasaDaniela4PM)
         {
-            GoToNewPlace MundoAbierto = FindObjectOfType<GoToNewPlace>();
-            MundoAbierto.isActive = false;
+            mundoAbierto.isActive = false;
         }
-        else
+        if(Environment.prologoCasaDaniela4PM && !visitsDone)
         {
             Destroy(FindObjectOfType<DialogueDanielaCasaDaniela>().gameObject);
+            mundoAbierto.newPlaceName = "PrologoAyuntamiento";
+            mundoAbierto.newSpawnName = "Entrada";
         }
     }
 

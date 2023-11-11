@@ -168,7 +168,7 @@ Transform:
   - {fileID: 888795812}
   - {fileID: 115023612}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79856027
 GameObject:
@@ -252,7 +252,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &96348177
 GameObject:
@@ -424,7 +424,7 @@ Transform:
   m_Children:
   - {fileID: 707986560}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &108654408
 PrefabInstance:
@@ -435,11 +435,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1066731410328348481, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_Name
-      value: ChangeZone
+      value: ChangeZoneCasaDaniela
       objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_LocalPosition.x
@@ -514,6 +514,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2497cab0fa597894d80692851801a25f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &108654411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108654409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d619fdc7839a314d86c976fb796fcb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &115023611
@@ -765,7 +777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 26.019}
 --- !u!1001 &180121226
 PrefabInstance:
@@ -1470,7 +1482,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &638168197
 GameObject:
@@ -1807,7 +1819,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35.681}
 --- !u!1 &707986559
 GameObject:
@@ -3164,6 +3176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0fc2979394a6b41bc3bdc71348e895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MasTarde: {fileID: 21300000, guid: 076175f8a05662f4d82384a8674dc5dc, type: 3}
   pensamientos1: {fileID: 21300000, guid: 074b075066cba724aa3d50481df27efc, type: 3}
   pensamientos2: {fileID: 21300000, guid: e5002ed166f5ed9489b7e0703ac5df0a, type: 3}
   pensamientos3: {fileID: 21300000, guid: 5189c829c9dadb04b81f35e749450840, type: 3}
@@ -3236,7 +3249,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1221435444
 GameObject:
@@ -3320,7 +3333,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243229948
 GameObject:
@@ -3964,7 +3977,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1472517647
 GameObject:
@@ -4188,7 +4201,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1492536459
 GameObject:
@@ -4272,8 +4285,69 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1522676238
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: spawnName
+      value: WC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7163970906836352361, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_Name
+      value: WC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2565626
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03459738
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
 --- !u!1 &1543888238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,7 +4430,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1550362453
 GameObject:
@@ -4720,7 +4794,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702306864
 GameObject:
@@ -11571,7 +11645,7 @@ MonoBehaviour:
   dialogueMark: {fileID: 1927095857}
   dialoguePanel: {fileID: 652168456}
   dialogueText: {fileID: 652168455}
-  dialogueLines:
+  dialogueLinesFinal:
   - "Daniela: Ya volviste, pens\xE9 que vendr\xEDas hasta m\xE1s tarde. Ya me iba
     echar a ver reels."
   - "Morgan: Ya me hab\xEDa cansado, est\xE1 grandecito. Fui hasta el cerro."
@@ -11579,6 +11653,14 @@ MonoBehaviour:
   - "Morgan: Pues normal, \xBFpor qu\xE9?"
   - "Daniela: Nom\xE1s. Vamos a cenar de una vez, hubo mucha chamba y ya me siento
     cansada."
+  dialogueLines:
+  - 'Daniela: El madrugador'
+  - 'Morgan: No pude dormir muy bien, y ya no aguante la cama'
+  - "Daniela: Tal vez deber\xEDas de salir a que te pegue un rato el sol, "
+  - "Daniela: \xBFpor qu\xE9 no vas a mi chamba a ver si encuentras algo interesante
+    que hacer?\r"
+  - 'Morgan: Lo voy a pensar'
+  - 'Daniela: Bueno, nos vemos al rato'
 --- !u!1 &1927095857 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3164276644459164252, guid: 1895fa723e8be5342b56630f45f56ea1, type: 3}

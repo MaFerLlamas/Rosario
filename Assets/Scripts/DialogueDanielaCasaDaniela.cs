@@ -7,6 +7,7 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLinesFinal;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
 
     private float typingTime = 0.05f;
@@ -34,6 +35,14 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
             }
         }
     }
+
+    private void Start()
+    {
+        if (Environment.prologoCasaDanielaDialogo2EscenasDone)
+        {
+            dialogueLines = dialogueLinesFinal;
+        }
+    }
     private void startDialogue()
     {
         didDialogueStart = true;
@@ -57,7 +66,8 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            Environment.dialogoDanielaFinalDone = true;
+            if(Environment.prologoCasaDaniela4PM) Environment.dialogoDanielaFinalDone = true;
+            else Environment.prologoCasaDanielaDialogo2EscenasDone = true;
         }
     }
 
