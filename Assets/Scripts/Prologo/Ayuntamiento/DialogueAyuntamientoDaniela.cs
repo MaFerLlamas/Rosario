@@ -62,7 +62,17 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             Environment.didDialogueAlreadyPast =true;
-            if(Environment.algoQueHacerStart) Environment.dialogoDanielaAlgoQueHacerDone = true;
+            if(Environment.algoQueHacerStart) {
+                Environment.dialogoDanielaAlgoQueHacerDone = true;
+                //Mostrando Mision en pantalla
+                //FIN DE QUEST 1
+                //Y ahora Que
+                FindObjectOfType<QuestDialogue>().initQuest(1, false, true);
+                // Y ahora Que
+                //Algo Que Hacer
+                FindObjectOfType<QuestDialogue>().initQuest(2, true, false);
+                
+            }
         }
     }
 

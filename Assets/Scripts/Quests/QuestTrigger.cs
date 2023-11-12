@@ -24,6 +24,8 @@ public class QuestTrigger : MonoBehaviour
                 if (startPoint && !manager.quests[questID].gameObject.activeInHierarchy){
                     manager.quests[questID].gameObject.SetActive(true);
                     manager.quests[questID].startQuest();
+                    manager.questsList[questID].gameObject.SetActive(true);
+                    manager.questsList[questID].startListQuest(); 
                 }
 
                 if (endPoint && manager.quests[questID].gameObject.activeInHierarchy){

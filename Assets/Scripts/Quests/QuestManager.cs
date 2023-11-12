@@ -5,22 +5,22 @@ using UnityEngine;
 public class QuestManager : MonoBehaviour
 {
     public Quest[] quests;
+    public QuestList[] questsList;
     public bool[] questCompleted;
+    public bool[] questActive;
 
 
-    private MisionsTextManager manager;
-    private MisionsListManager listManager;
+    private TextQuestManager manager;
     // Start is called before the first frame update
     void Start()
     {
         questCompleted = new bool[quests.Length];
-        manager = FindObjectOfType<MisionsTextManager>();
-        listManager = FindObjectOfType<MisionsListManager>();
+        questActive = new bool[quests.Length];
+        manager = FindObjectOfType<TextQuestManager>();
     }
 
 
     public void showQuestText(string questText){
         manager.ShowDialog(questText);
-        //listManager.ShowDialog(questText);
     }
 }

@@ -14,7 +14,14 @@ public class DialogueCasaDaniela0 : MonoBehaviour
     private bool didDialogueStart;
     private bool firstDialogueActivated;
     private int lineIndex=0;
-
+    //Propositos de Testig Activar para saltar Dialogo
+    public bool skipDialogueForTesting;
+    void Start(){
+        //Propositos de Testig
+            if (Environment.skipDialogueForTestingAll == true){
+            skipDialogueForTesting = true;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -49,6 +56,7 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             
         }
         else {
+            //FIN DEL DIALOGO
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
