@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class MisionsTextManager : MonoBehaviour
+public class TextQuestManager : MonoBehaviour
 {
     public GameObject dialogBox;
     public TMP_Text dialogText;

@@ -56,6 +56,7 @@ public class DialogueAlgoQueHacerStart : MonoBehaviour
         }
         else
         {
+            // FIN DEL DIALOGO
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);

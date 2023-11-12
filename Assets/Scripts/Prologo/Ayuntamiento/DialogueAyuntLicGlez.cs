@@ -19,6 +19,14 @@ public class DialogueAyuntLicGlez : MonoBehaviour
     private bool didDialogueStart;
     private int lineIndex;
 
+    //Propositos de Testig Activar para saltar Dialogo
+    public bool skipDialogueForTesting;
+    void Start(){
+        //Propositos de Testig
+            if (Environment.skipDialogueForTestingAll == true){
+            skipDialogueForTesting = true;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -67,10 +75,12 @@ public class DialogueAyuntLicGlez : MonoBehaviour
             Time.timeScale = 1f;
 
             if (Environment.didLicThoughtsPast){
-                Debug.Log("Llamando mission");
                 if (!Environment.didDialogueAlreadyPastGlz){
                     Environment.didDialogueAlreadyPastGlz = true;
                     //Mostrando Mision en pantalla
+                    //FIN DE QUEST 0
+                    //Un pretexto
+                    FindObjectOfType<QuestDialogue>().initQuest(0, false, true);
                     // Y ahora Que
                     //QUEST 1 INICIO
                     FindObjectOfType<QuestDialogue>().initQuest(1, true, false);

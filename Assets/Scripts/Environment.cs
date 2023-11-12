@@ -45,6 +45,9 @@ public class Environment : MonoBehaviour
     public static bool habloDiana;
     public static bool habloJoseFinal;
     public static bool habloDianaFinal;
+    //Propositos de Testig
+    //Activar para saltarse los Dialogos 
+    public static bool skipDialogueForTestingAll = true;
     void Start()
     {
         camara = FindObjectOfType<CameraFollow>();

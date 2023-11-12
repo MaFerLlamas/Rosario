@@ -5,7 +5,6 @@ using UnityEngine;
 public class QuestDialogue : MonoBehaviour
 {
     private QuestManager manager;
-    //public bool startPoint, endPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +18,15 @@ Debug.Log("llamada recibida Mision "+ questID);
             // Si estoy En el punto de inicio y la mision no esta activa
             if (startPoint && !manager.quests[questID].gameObject.activeInHierarchy){
                 manager.quests[questID].gameObject.SetActive(true);
-                manager.quests[questID].startQuest();
+                manager.quests[questID].startQuest(); 
+                Debug.Log("0");
+                manager.questsList[questID].gameObject.SetActive(true);
+                manager.questsList[questID].startListQuest(); 
             }
 
             if (endPoint && manager.quests[questID].gameObject.activeInHierarchy){
                 manager.quests[questID].CompleteQuest();
+                manager.questsList[questID].gameObject.SetActive(false);
             }
         }
     }

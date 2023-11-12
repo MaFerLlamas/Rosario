@@ -14,6 +14,8 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
+    //Propositos de Testig Activar para saltar Dialogo
+    public bool skipDialogueForTesting;
 
     // Update is called once per frame
     void Update()
@@ -23,8 +25,7 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
             if (!didDialogueStart)
             {
                 startDialogue();
-            }
-            else if (dialogueText.text == dialogueLines[lineIndex])
+            }else if (dialogueText.text == dialogueLines[lineIndex])
             {
                 nextDialogueLine();
             }
@@ -41,6 +42,10 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
         if (Environment.prologoCasaDanielaDialogo2EscenasDone)
         {
             dialogueLines = dialogueLinesFinal;
+        }
+        //Propositos de Testig
+        if (Environment.skipDialogueForTestingAll == true){
+            skipDialogueForTesting = true;
         }
     }
     private void startDialogue()
@@ -62,12 +67,22 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
         }
         else
         {
+            //FIN DEL DIALOGO
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            if(Environment.prologoCasaDaniela4PM) Environment.dialogoDanielaFinalDone = true;
-            else Environment.prologoCasaDanielaDialogo2EscenasDone = true;
+            if(Environment.prologoCasaDaniela4PM) {
+                Environment.dialogoDanielaFinalDone = true;  
+            }
+            else {Environment.prologoCasaDanielaDialogo2EscenasDone = true;
+                // Activando el sistema de misiones por primera vez
+                //GameObject.Find("Scroll View").SetActive(true);
+                //Mostrando Mision en pantalla
+                // "UN PRETEXTO"
+                //QUEST 0 INICIO
+                FindObjectOfType<QuestDialogue>().initQuest(0, true, false);
+            }
         }
     }
 
