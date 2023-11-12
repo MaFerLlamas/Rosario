@@ -75,13 +75,8 @@ public class DialogueDanielaCasaDaniela : MonoBehaviour
             if(Environment.prologoCasaDaniela4PM) {
                 Environment.dialogoDanielaFinalDone = true;  
             }
-            else {Environment.prologoCasaDanielaDialogo2EscenasDone = true;
-                // Activando el sistema de misiones por primera vez
-                //GameObject.Find("Scroll View").SetActive(true);
-                //Mostrando Mision en pantalla
-                // "UN PRETEXTO"
-                //QUEST 0 INICIO
-                FindObjectOfType<QuestDialogue>().initQuest(0, true, false);
+            else {
+                Environment.prologoCasaDanielaDialogo2EscenasDone = true;
             }
         }
     }

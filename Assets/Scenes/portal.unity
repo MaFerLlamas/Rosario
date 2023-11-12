@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 2
-  sartText: 'Algo que hacer: Visita todos los Escenarios de Rosario '
+  startText: 'Algo que hacer: Visita todos los Escenarios de Rosario'
   completeText: 
 --- !u!224 &24824020
 RectTransform:
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 0
-  sartText: "Misi\xF3n activa: Un pretexto Habla con tu prima en el ayuntamiento "
+  startText: 'Un Pretexto: Habla con tu prima en el Ayuntamiento'
   completeText: 
 --- !u!224 &974103911
 RectTransform:
@@ -2034,7 +2034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 1
-  sartText: "\xBFY ahora qu\xE9?: Descubre algo sobre la m\xE1quina de refrescos"
+  startText: "\xBFY ahora que?: Descubre algo sobre la m\xE1quina de refrescos"
   completeText: 
 --- !u!1 &1224618838
 GameObject:
@@ -2047,6 +2047,7 @@ GameObject:
   - component: {fileID: 1224618839}
   - component: {fileID: 1224618840}
   - component: {fileID: 1224618841}
+  - component: {fileID: 1224618842}
   m_Layer: 0
   m_Name: QuestManager
   m_TagString: Untagged
@@ -2104,6 +2105,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7518d7de3f4bd87428c166bba2fb3730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1224618842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224618838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af743174c6196bf4fb79bd781350e08b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1315779400
