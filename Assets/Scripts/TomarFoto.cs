@@ -6,9 +6,9 @@ public class TomarFoto : MonoBehaviour
 {
     private void Start()
     {
-        if (Environment.tieneFotoJose)
+        if (Environment.tieneFotoJose && ! Environment.habloJoseFinal)
         {
-            Destroy(this.gameObject);
+            GetComponent<SpriteRenderer>().sprite = null;
         }
     }
 
@@ -17,7 +17,8 @@ public class TomarFoto : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && Environment.habloJose)
         {
             Environment.tieneFotoJose = true;
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
+            GetComponent<SpriteRenderer>().sprite = null;
             FindObjectOfType<GoToNewPlace>().isActive = true;
         }
     }

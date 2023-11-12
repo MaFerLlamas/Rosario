@@ -88,7 +88,7 @@ public class DialogueMargaritaDiana : MonoBehaviour
                 Debug.Log("habloDianaFinal");
                 Environment.habloDianaFinal = true;
                 DialogueFoto foto = FindObjectOfType<DialogueFoto>();
-                //foto.setFoto(); //esto crashea aqui y no se porque
+                foto.setFoto(); //esto crashea aqui y no se porque
             }
         }
     }
