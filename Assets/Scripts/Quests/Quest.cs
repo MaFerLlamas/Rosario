@@ -7,19 +7,22 @@ public class Quest : MonoBehaviour
     public int questID;
     private QuestManager manager;
 
-    public string sartText, completeText;
+    public string startText, completeText;
     // Start is called before the first frame update
     void Start(){
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void startQuest(){
+        Debug.Log("title start quest" + startText);
         manager = FindObjectOfType<QuestManager>();
-        manager.showQuestText(sartText);
+        manager.showQuestText(startText);
+    }
+    public void startQuest(string newText){
+        Debug.Log("title start quest; with string" + newText);
+        manager = FindObjectOfType<QuestManager>();
+        manager.showQuestText(newText);
     }
     public void CompleteQuest(){
         manager.showQuestText(completeText);

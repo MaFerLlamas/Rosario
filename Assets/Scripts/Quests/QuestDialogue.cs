@@ -30,4 +30,18 @@ Debug.Log("llamada recibida Mision "+ questID);
             }
         }
     }
+    // Update is called once per frame
+    public void UpdateQuest(int questID, string text){
+
+        manager = FindObjectOfType<QuestManager>();
+        if (!manager.questCompleted[questID]){
+
+                manager.quests[questID].gameObject.SetActive(true);
+                manager.quests[questID].startQuest(text); 
+                Debug.Log("0");
+                manager.questsList[questID].gameObject.SetActive(true);
+                manager.questsList[questID].startListQuest(text); 
+        }
+    }
+
 }
