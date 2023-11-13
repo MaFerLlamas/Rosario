@@ -1720,6 +1720,7 @@ MonoBehaviour:
     regresar a trabajar'
   - 'Daniela: En el refri hay comida por si te da hambre, en la noche hay que ir
     a cenar al mercado.'
+  skipDialogueForTesting: 0
 --- !u!114 &727139637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4521,6 +4522,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4375, y: 0.59375}
   m_EdgeRadius: 0
+--- !u!1001 &1264381427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2529025046658118765, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_Name
+      value: SonidoInteriores
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3472857
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.4118185
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.013230034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415348796027076223, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20395675ca9b15e409edfc1eb7738a49, type: 3}
 --- !u!1 &1459863826
 GameObject:
   m_ObjectHideFlags: 0
