@@ -35,6 +35,7 @@ public class Environment : MonoBehaviour
     public static bool visitedGranja;
     public static bool visitedLago;
     public static bool visitedCamping;
+    public static bool algoQueHacerDone;
 
     //banderas escenaFinal
     public static bool dialogoDanielaFinalDone;
@@ -45,6 +46,10 @@ public class Environment : MonoBehaviour
     public static bool habloDiana;
     public static bool habloJoseFinal;
     public static bool habloDianaFinal;
+    public static bool fotoTrofeo;
+
+    public static bool habloPescador;
+    public static bool tieneCana;
     //Propositos de Testig
     //Activar para saltarse los Dialogos 
     public static bool skipDialogueForTestingAll = false;
@@ -80,6 +85,7 @@ public class Environment : MonoBehaviour
         visitedGranja = false;
         visitedLago = false;
         visitedCamping = false;
+        algoQueHacerDone = false;
 
         //6 final
         dialogoDanielaFinalDone =false;
@@ -91,6 +97,10 @@ public class Environment : MonoBehaviour
         habloDiana = false;
         habloJoseFinal = false;
         habloDianaFinal = false;
+        fotoTrofeo = false;
+
+        habloPescador = false;
+        tieneCana =false;
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
          * aqui abajo estaran las modificaciones correspondientes para que no tengan que pasar todo el juego"
@@ -135,5 +145,15 @@ public class Environment : MonoBehaviour
     {
         //Debug.Log(visitedCementerio + "/" + visitedCerro + "/" + visitedGasolinera + "/" + visitedGranja + "/" + visitedLago + "/" + visitedCamping);
         return visitedCementerio && visitedCerro && visitedGasolinera && visitedGranja && visitedLago && visitedCamping;
+    }
+
+    public static void setMorganRunning(bool value)
+    {
+        morgan.GetComponent<Animator>().SetBool("Running", value);   
+    }
+
+    public static void setMorganFishing(bool value)
+    {
+        morgan.GetComponent<Animator>().SetBool("Fishing", value);
     }
 }

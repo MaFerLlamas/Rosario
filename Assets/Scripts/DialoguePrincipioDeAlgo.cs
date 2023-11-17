@@ -22,7 +22,7 @@ public class DialoguePrincipioDeAlgo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Environment.algoQueHacerVisitsDone() || Environment.algoQueHacerVisitsDone() && firstDialogue)
+        if (Input.GetButtonDown("Fire1") && Environment.algoQueHacerVisitsDone() && !Environment.algoQueHacerDone || Environment.algoQueHacerVisitsDone() && firstDialogue)
         {
             firstDialogue = false;
             if (!didDialogueStart)
@@ -63,6 +63,7 @@ public class DialoguePrincipioDeAlgo : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
+            Environment.algoQueHacerDone = true;
         }
     }
 

@@ -40,10 +40,12 @@ public class MorganController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = 20.0f;
+            Environment.setMorganRunning(true);
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = 4.0f;
+            Environment.setMorganRunning(false);
         }
 
         if (morganShouldMove){

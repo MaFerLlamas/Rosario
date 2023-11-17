@@ -13,24 +13,32 @@ public class DialogueFoto : MonoBehaviour
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
+    private bool dialogueStarted;
 
     // Update is called once per frame
     private void Start()
     {
         GetComponent<SpriteRenderer>().sprite = null;
+        dialogueStarted = false;
     }
 
     public void setFoto()
     {
         GetComponent<SpriteRenderer>().sprite = imagenFoto;
+        Debug.Log("coloque foto");
+    }
+    private void quitaFoto()
+    {
+        GetComponent<SpriteRenderer>().sprite = null;
     }
     void Update()
     {
-        if (isPlayerInRange && Input.GetButtonDown("Fire1") && Environment.habloJoseFinal && Environment.habloDianaFinal)
+        if (isPlayerInRange && Input.GetButtonDown("Fire1") && Environment.habloJoseFinal && Environment.habloDianaFinal || !dialogueStarted && Environment.habloJoseFinal && Environment.habloDianaFinal && isPlayerInRange)
         {
             if (!didDialogueStart)
             {
                 startDialogue();
+                dialogueStarted=true;
             }
             else if (dialogueText.text == dialogueLines[lineIndex])
             {
@@ -64,6 +72,8 @@ public class DialogueFoto : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             Time.timeScale = 1f;
+            Environment.fotoTrofeo = true;
+            quitaFoto();
         }
     }
 
