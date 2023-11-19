@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
+    
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;

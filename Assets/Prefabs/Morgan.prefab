@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7695866591964730074}
   - component: {fileID: 5665798572345629916}
   - component: {fileID: 7670446136905102793}
+  - component: {fileID: 8404431100913286565}
   m_Layer: 0
   m_Name: Morgan
   m_TagString: Player
@@ -148,3 +149,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8415009, y: 0.7259499}
   m_EdgeRadius: 0
+--- !u!95 &8404431100913286565
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7141720870648568471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca384d7b05150fb4f86cdf9618ea2259, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

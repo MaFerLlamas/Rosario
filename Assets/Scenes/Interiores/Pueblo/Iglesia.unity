@@ -234,90 +234,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.09375, y: 0.65625}
   m_EdgeRadius: 0
---- !u!1 &176869097
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 176869100}
-  - component: {fileID: 176869099}
-  - component: {fileID: 176869098}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &176869098
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176869097}
-  m_Enabled: 1
---- !u!20 &176869099
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176869097}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &176869100
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176869097}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &203966340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,6 +1478,119 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4375, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1001 &682159574
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984069, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161599271472984090, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+--- !u!114 &682159575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1161599273396573011, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+  m_PrefabInstance: {fileID: 682159574}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &682159576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1161599271797656047, guid: 34b59c5ac0be4b145a06f0704f32857a, type: 3}
+  m_PrefabInstance: {fileID: 682159574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &767890807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1702,300 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4375, y: 0.5}
   m_EdgeRadius: 0
+--- !u!1001 &807458207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3770389349170652298, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652298, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652298, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652298, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 682159575}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 682159576}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "Padre: Hola joven, nunca te hab\xEDa visto por aqu\xED\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Morgan: Hola Padre soy Morgan, vine aqu\xED con mi prima Daniela"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "Padre: Daniela, nunca viene por aqu\xED, pero s\xED he llegado a platicar
+        con ella, es muy agradable\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Morgan:S\xED, es bastante extrovertida"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "Padre: Y dime, \xBFqu\xE9 haces aqu\xED? \xBFVienes a buscar a Dios?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "Morgan: No realmente, aunque ni siquiera s\xE9 que estoy buscando a
+        estas alturas. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[6]
+      value: 'Morgan: Me siento un poco perdido.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
+      value: "Padre: Es normal sentirse perdido, yo me siento m\xE1s perdido que
+        nada desde que me encuentro en Rosario"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[8]
+      value: "Padre:  y no por el pueblo o su gente.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "Morgan: \xBFEs normal que nos desahoguemos con un desconocido?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: "Padre: No realmente, pero es m\xE1s f\xE1cil contarle tus problemas
+        a alguien que no te conoce"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[11]
+      value: "Morgan: Posiblemente tiene raz\xF3n."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[12]
+      value: "Morgan: \xBFY por qu\xE9 se siente perdido, no se supone que se encuentra
+        en la casa de Dios y est\xE1 m\xE1s cerca de \xE9l, o algo parecido?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[13]
+      value: "Padre: \u2026\r."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[14]
+      value: "Padre: Dios no podr\xEDa estar aqu\xED, en un sitio fr\xEDo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[15]
+      value: "Padre: sin alegr\xEDa y a donde solo vienes buscando favor y no por
+        lo que es el.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[16]
+      value: "Morgan: \u2026 \xBFqu\xE9?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[17]
+      value: 'Padre: No me malinterpretes joven, yo creo en Dios.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[18]
+      value: "Padre: Pero no lo siento aqu\xED, no es el Dios que yo he le\xEDdo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[19]
+      value: "Morgan: \xBFY qu\xE9 lo mantiene aqu\xED?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[20]
+      value: "Padre: La indecisi\xF3n, el miedo. Aqu\xED estoy c\xF3modo"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[21]
+      value: 'Padre:  pero no estoy seguro que esta sea la manera de encontrar a
+        Dios.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[22]
+      value: "Padre: No esperaba encontrar las respuestas as\xED de f\xE1cil, pero
+        creo que Dios me las dar\xE1."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[23]
+      value: "Morgan: Supongo que yo tambi\xE9n quisiera encontrarlas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[24]
+      value: 'Padre: Bueno Morgan, no nos torturemos con dilemas. Me agrada mucho
+        hablar contigo'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[25]
+      value: "\xBFte parece si me vuelves a visitar?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: dialogueLines.Array.data[26]
+      value: "Morgan: Lo pensar\xE9, nos vemos"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652309, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652309, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_Size.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652309, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 16b879cce26cd864b88982aa3f4f35a7, type: 3}
+    - target: {fileID: 3770389349170652309, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652310, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_Name
+      value: Padre
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.621
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0158348
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: c568544511bb2244f898204669db80df, type: 3}
+--- !u!1 &807458208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3770389349170652310, guid: c568544511bb2244f898204669db80df, type: 3}
+  m_PrefabInstance: {fileID: 807458207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &807458209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3770389347499461136, guid: c568544511bb2244f898204669db80df, type: 3}
+  m_PrefabInstance: {fileID: 807458207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &807458210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807458208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a87de44bc184b0643989dea0ab1ebaa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMark: {fileID: 807458209}
+  dialoguePanel: {fileID: 682159576}
+  dialogueText: {fileID: 682159575}
+  dialogueLines1:
+  - "Padre: Hola joven, nunca te hab\xEDa visto por aqu\xED\r"
+  - "Morgan: Hola Padre soy Morgan, vine aqu\xED con mi prima Daniela"
+  - "Padre: Daniela, nunca viene por aqu\xED, pero s\xED he llegado a platicar con
+    ella, es muy agradable\r"
+  - "Morgan:S\xED, es bastante extrovertida"
+  - "Padre: Y dime, \xBFqu\xE9 haces aqu\xED? \xBFVienes a buscar a Dios?"
+  - "Morgan: No realmente, aunque ni siquiera s\xE9 que estoy buscando a estas alturas. "
+  - 'Morgan: Me siento un poco perdido.'
+  - "Padre: Es normal sentirse perdido, yo me siento m\xE1s perdido que nada desde
+    que me encuentro en Rosario"
+  - "Padre:  y no por el pueblo o su gente.\r"
+  - "Morgan: \xBFEs normal que nos desahoguemos con un desconocido?"
+  - "Padre: No realmente, pero es m\xE1s f\xE1cil contarle tus problemas a alguien
+    que no te conoce"
+  - "Morgan: Posiblemente tiene raz\xF3n."
+  - "Morgan: \xBFY por qu\xE9 se siente perdido, no se supone que se encuentra en
+    la casa de Dios y est\xE1 m\xE1s cerca de \xE9l?"
+  - "Morgan: \xBF o algo parecido?"
+  - "Padre:  \u2026\r..   "
+  - "Padre: Dios no podr\xEDa estar aqu\xED, en un sitio fr\xEDo"
+  - "Padre: sin alegr\xEDa y a donde solo vienes buscando favor y no por lo que es
+    el.\r"
+  - "Morgan: \u2026 \xBFqu\xE9?"
+  - 'Padre: No me malinterpretes joven, yo creo en Dios.'
+  - "Padre: Pero no lo siento aqu\xED, no es el Dios que yo he le\xEDdo."
+  - "Morgan: \xBFY qu\xE9 lo mantiene aqu\xED?"
+  - "Padre: La indecisi\xF3n, el miedo. Aqu\xED estoy c\xF3modo"
+  - 'Padre:  pero no estoy seguro que esta sea la manera de encontrar a Dios.'
+  - "Padre: No esperaba encontrar las respuestas as\xED de f\xE1cil, pero creo que
+    Dios me las dar\xE1."
+  - "Morgan: Supongo que yo tambi\xE9n quisiera encontrarlas."
+  - 'Padre: Bueno Morgan, no nos torturemos con dilemas. Me agrada mucho hablar contigo'
+  - "\xBFte parece si me vuelves a visitar?"
+  - "Morgan: Lo pensar\xE9, nos vemos"
+  dialogueLines2:
+  - 'Padre: Sigo pensando en lo que hablamos'
+  - 'Morgan: Yo trato de no hacerlo'
 --- !u!1 &860076790
 GameObject:
   m_ObjectHideFlags: 0
@@ -7569,90 +7892,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
---- !u!1 &1045210385
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1045210387}
-  - component: {fileID: 1045210386}
-  m_Layer: 0
-  m_Name: ElPadre
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1045210386
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045210385}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1187567783
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16b879cce26cd864b88982aa3f4f35a7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.8, y: 2.4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1045210387
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045210385}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.621, y: 1.935, z: 0}
-  m_LocalScale: {x: 0.3605, y: 0.3605, z: 0.3605}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1222100083
 GameObject:
   m_ObjectHideFlags: 0
@@ -8144,6 +8383,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.09375, y: 0.65625}
   m_EdgeRadius: 0
+--- !u!1001 &1536828594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.517
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206703201932079924, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7141720870648568471, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
+      propertyPath: m_Name
+      value: Morgan
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a744eb3bf56e9524c9524001a0f11a38, type: 3}
 --- !u!1 &1839306055
 GameObject:
   m_ObjectHideFlags: 0
@@ -8264,7 +8560,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7755233281584507956, guid: 0251cd272175b8f48ba628ad6046d6a0, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7755233281584507956, guid: 0251cd272175b8f48ba628ad6046d6a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8308,7 +8604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7755233281584507959, guid: 0251cd272175b8f48ba628ad6046d6a0, type: 3}
       propertyPath: m_Name
-      value: Main Camera (1)
+      value: TestCamera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0251cd272175b8f48ba628ad6046d6a0, type: 3}

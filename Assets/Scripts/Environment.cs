@@ -50,6 +50,17 @@ public class Environment : MonoBehaviour
 
     public static bool habloPescador;
     public static bool tieneCana;
+    //Dialogos NPC por el mundo
+
+    //INTERIOR IGLESIA
+    public static bool habloPadre;
+    //MUNDO ABIERTO
+    public static int habloOmarCont;
+    public static bool habloFernandoAcostado;
+    //INTERIORES
+    public static int habloElizabthCont;
+
+
     //Propositos de Testig
     //Activar para saltarse los Dialogos 
     public static bool skipDialogueForTestingAll = false;
@@ -101,6 +112,13 @@ public class Environment : MonoBehaviour
 
         habloPescador = false;
         tieneCana =false;
+
+        //NPC's Dialogos
+        habloPadre = false;
+        habloFernandoAcostado = false;
+        habloOmarCont = 1;
+        habloElizabthCont = 1;
+
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
          * aqui abajo estaran las modificaciones correspondientes para que no tengan que pasar todo el juego"
@@ -117,6 +135,8 @@ public class Environment : MonoBehaviour
         visitedLago = true;
         visitedCamping = true;
         */
+
+
 
     }
         public static void VisitedPlace(string place)

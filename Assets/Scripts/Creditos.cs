@@ -93,7 +93,7 @@ public class Creditos : MonoBehaviour
                 Environment.newSpawnName = "WC";
                 UnityEngine.SceneManagement.SceneManager.LoadScene("PrologoCasaDaniela");
                  // Activando el sistema de misiones por primera vez
-                //GameObject.Find("Scroll View").SetActive(true);
+                FindObjectOfType<GlobalCanvasManager>().scrollView.SetActive(true);
                 //Mostrando Mision en pantalla
                 // "UN PRETEXTO"
                 //QUEST 0 INICIO
