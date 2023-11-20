@@ -56,9 +56,13 @@ public class Environment : MonoBehaviour
     public static bool habloPadre;
     //MUNDO ABIERTO
     public static int habloOmarCont;
+    public static int habloMarthaCont;
     public static bool habloFernandoAcostado;
     //INTERIORES
     public static int habloElizabthCont;
+    public static int habloJoaquinCont;
+    //Zona de Camping
+    public static bool habloGonzaloEspinoza;
 
 
     //Propositos de Testig
@@ -116,8 +120,12 @@ public class Environment : MonoBehaviour
         //NPC's Dialogos
         habloPadre = false;
         habloFernandoAcostado = false;
+        habloGonzaloEspinoza = false;
         habloOmarCont = 1;
         habloElizabthCont = 1;
+        habloMarthaCont = 1;
+        habloJoaquinCont = 1;
+        
 
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse

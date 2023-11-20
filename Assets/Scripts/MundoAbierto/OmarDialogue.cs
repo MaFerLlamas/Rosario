@@ -79,8 +79,6 @@ public class OmarDialogue : MonoBehaviour
 
     private IEnumerator ShowLine(){
         dialogueText.text = string.Empty;
-        Debug.Log("Environment.habloOmarCont" + Environment.habloOmarCont);
-        Debug.Log("lineIndex" + lineIndex);
         foreach(char ch in dialogue[lineIndex]){
             dialogueText.text  += ch;
             yield return new WaitForSecondsRealtime(typingTime);

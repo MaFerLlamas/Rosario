@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologo/Ayuntamiento/PrologoAyuntamiento.unity
     guid: 4fbe220c79bccd7408de302b3d12ec98
   - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasaGuzman.unity
+    guid: 8e49f6fcb1c8b284cbb96ec15f3a6b2a
+  - enabled: 1
     path: Assets/Scenes/MundoAbierto.unity
     guid: 54047e17ab5160b47ba6d8fe29cbd36e
   - enabled: 1

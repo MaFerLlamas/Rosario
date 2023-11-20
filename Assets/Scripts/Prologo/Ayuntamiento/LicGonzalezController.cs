@@ -9,8 +9,6 @@ public class LicGonzalezController : MonoBehaviour
     public Transform endPosition;
 
     private Transform currentStart;
-    [SerializeField] private GameObject dialogueMark1;
-    [SerializeField] private GameObject dialogueMark2;
     
 
     public float speed = 2.0f;

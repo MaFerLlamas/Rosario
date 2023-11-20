@@ -27,12 +27,5 @@ public class RioAudio : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        // Reproducir audio si el objeto de la zona está activo al inicio de la escena
-        if (gameObject.activeSelf)
-        {
-            audioSource.Play();
-        }
-    }
+ 
 }
