@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25cd5137b64b26144ac3a5a28db03ea8
-      internalID: -1929774579
+      spriteID: 3591a430df82dd049b7ee93ceb9cdd53
+      internalID: 1827955457
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0af63f990ef45a84daadac24e4b33750
-      internalID: -1875030201
+      spriteID: ede1cf05905b45345a11ad2ebdea8376
+      internalID: 164232245
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdbdf752e4d590c4fa17d1f6e41cba73
-      internalID: 250609055
+      spriteID: f721ef0f92e716b4cbb09327b7791c79
+      internalID: 1283519917
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fd081ace48f1264886368251efea2ca
-      internalID: -2112978567
+      spriteID: 1a9d613ce0a28114b80f7d5d139bcd79
+      internalID: 491445485
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6988e597493f97442ace4d1aa8093cb4
-      internalID: -1783024854
+      spriteID: fe50c039d0843204ba3b811bfa991f6f
+      internalID: -47764106
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9786546494e5bc64cbb13282f316111b
-      internalID: -507110017
+      spriteID: 3390daf19b2cc6743bde904ce1e4976d
+      internalID: -358935361
       vertices: []
       indices: 
       edges: []
@@ -245,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01225658604a25944857654368145a50
-      internalID: 1627117076
+      spriteID: 061bccc63a5c61740b1fcae98c07d0cd
+      internalID: -1348343773
       vertices: []
       indices: 
       edges: []
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8bbe214d438d8e438e27a9cdadf3764
-      internalID: 914504872
+      spriteID: 35dcd73f97e2ac543a09e02a99501b68
+      internalID: -1566996024
       vertices: []
       indices: 
       edges: []
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70ff2d176f6e4df48b32e8ee596ee177
-      internalID: 748154024
+      spriteID: ae943201c36de844fbc931f101ff9ea1
+      internalID: -417849291
       vertices: []
       indices: 
       edges: []
@@ -308,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad51f05c12c0648438f08fa991b47fcd
-      internalID: 716862877
+      spriteID: 35a8a6fb568c194469bf48bb7629002d
+      internalID: -1733248149
       vertices: []
       indices: 
       edges: []
@@ -329,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e93ddfeba0b2a2648857f063eb872814
-      internalID: -99897414
+      spriteID: 744d8149fcb9c294c80f2aac41314cc1
+      internalID: -1567446084
       vertices: []
       indices: 
       edges: []
@@ -350,8 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26cf330b27d8730428fcf71ba7546f5b
-      internalID: 1972656664
+      spriteID: f716a40a69535a540b14b0c1171bac51
+      internalID: 2091861548
       vertices: []
       indices: 
       edges: []
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230338b8c5a583e4a8ef4220b614c323
-      internalID: 808377135
+      spriteID: 627e217601add0a4599f7b316bd45cc6
+      internalID: 1052905185
       vertices: []
       indices: 
       edges: []
@@ -392,8 +392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6512eb278ad2c3d43a04f13fa52c2270
-      internalID: 954836195
+      spriteID: db4f6c4486db9ec439975487259a3828
+      internalID: -744126844
       vertices: []
       indices: 
       edges: []
@@ -413,8 +413,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f78f05f7f1735d428b5d476a298fb63
-      internalID: 360646262
+      spriteID: 4d020819d48c23645ac29f5481dfb9ae
+      internalID: 1145259912
       vertices: []
       indices: 
       edges: []
@@ -434,8 +434,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7897a81f26b42c04ca52ddc3b2bd99b4
-      internalID: -1018355554
+      spriteID: 9aca10ab20cc1674c88fff0f339970c8
+      internalID: -1967919032
       vertices: []
       indices: 
       edges: []
@@ -451,22 +451,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Julia Hernandez Anim_0: -1929774579
-      Julia Hernandez Anim_1: -1875030201
-      Julia Hernandez Anim_10: -99897414
-      Julia Hernandez Anim_11: 1972656664
-      Julia Hernandez Anim_12: 808377135
-      Julia Hernandez Anim_13: 954836195
-      Julia Hernandez Anim_14: 360646262
-      Julia Hernandez Anim_15: -1018355554
-      Julia Hernandez Anim_2: 250609055
-      Julia Hernandez Anim_3: -2112978567
-      Julia Hernandez Anim_4: -1783024854
-      Julia Hernandez Anim_5: -507110017
-      Julia Hernandez Anim_6: 1627117076
-      Julia Hernandez Anim_7: 914504872
-      Julia Hernandez Anim_8: 748154024
-      Julia Hernandez Anim_9: 716862877
+      Julia Hernandez Anim_0: 1827955457
+      Julia Hernandez Anim_1: 164232245
+      Julia Hernandez Anim_10: -1567446084
+      Julia Hernandez Anim_11: 2091861548
+      Julia Hernandez Anim_12: 1052905185
+      Julia Hernandez Anim_13: -744126844
+      Julia Hernandez Anim_14: 1145259912
+      Julia Hernandez Anim_15: -1967919032
+      Julia Hernandez Anim_2: 1283519917
+      Julia Hernandez Anim_3: 491445485
+      Julia Hernandez Anim_4: -47764106
+      Julia Hernandez Anim_5: -358935361
+      Julia Hernandez Anim_6: -1348343773
+      Julia Hernandez Anim_7: -1566996024
+      Julia Hernandez Anim_8: -417849291
+      Julia Hernandez Anim_9: -1733248149
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
