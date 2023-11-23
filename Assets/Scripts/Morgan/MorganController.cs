@@ -73,4 +73,5 @@ public class MorganController : MonoBehaviour
         animator.SetFloat(horizontal, Input.GetAxisRaw(horizontal));
         animator.SetFloat(vertical, Input.GetAxisRaw(vertical));
     }
+
 }
