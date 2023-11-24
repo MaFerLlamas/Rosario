@@ -11,17 +11,20 @@ public class SpawnZone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(Environment.newSpawnName.Equals(this.spawnName))
-        {
-            theMorgan = FindObjectOfType<MorganController>(); 
-            theCamera = FindObjectOfType<CameraFollow>(); 
+        if  (Environment.newSpawnName != null){
 
-            theMorgan.transform.position = this.transform.position;
-            theCamera.transform.position = new Vector3(
-                this.transform.position.x,
-                this.transform.position.y,
-                theCamera.transform.position.z
-            );
+            if(Environment.newSpawnName.Equals(this.spawnName))
+            {
+                theMorgan = FindObjectOfType<MorganController>(); 
+                theCamera = FindObjectOfType<CameraFollow>(); 
+
+                theMorgan.transform.position = this.transform.position;
+                theCamera.transform.position = new Vector3(
+                    this.transform.position.x,
+                    this.transform.position.y,
+                    theCamera.transform.position.z
+                );
+            }
         }
     }
 
