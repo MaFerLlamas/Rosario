@@ -33,7 +33,18 @@ public class MorganController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    public Vector2 getPosition()
+    {
+        return playerRigidbody.position;
+    }
+    public void setPosition(Vector2 newPosition)
+    {
+        playerRigidbody.position = newPosition;
+    }
+    public void setPosition(Vector3 newPosition)
+    {
+        playerRigidbody.position = new Vector2 (newPosition.x, newPosition.y);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -68,8 +79,29 @@ public class MorganController : MonoBehaviour
                 /*playerRigidbody.velocity = new Vector2(
                     playerRigidbody.velocity.x, Input.GetAxisRaw(vertical)*speed);   */
             }
+        }else
+        {
+            if (Environment.direccion.Equals(Environment.ARRIBA))
+            {
+                animator.SetFloat(horizontal, 1);
+                animator.SetFloat(vertical, 0);
+            }else if (Environment.direccion.Equals(Environment.ABAJO))
+            {
+                animator.SetFloat(horizontal, -1);
+                animator.SetFloat(vertical, 0);
+            }
+            else if (Environment.direccion.Equals(Environment.DERECHA))
+            {
+                animator.SetFloat(horizontal, 0);
+                animator.SetFloat(vertical, 1);
+            }
+            else if (Environment.direccion.Equals(Environment.IZQUIERDA))
+            {
+                animator.SetFloat(horizontal, 0);
+                animator.SetFloat(vertical, -1);
+            }
         }
-
+        
         animator.SetFloat(horizontal, Input.GetAxisRaw(horizontal));
         animator.SetFloat(vertical, Input.GetAxisRaw(vertical));
     }

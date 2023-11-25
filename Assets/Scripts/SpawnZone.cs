@@ -15,6 +15,7 @@ public class SpawnZone : MonoBehaviour
 
             if(Environment.newSpawnName.Equals(this.spawnName))
             {
+                
                 theMorgan = FindObjectOfType<MorganController>(); 
                 theCamera = FindObjectOfType<CameraFollow>(); 
 
@@ -24,6 +25,8 @@ public class SpawnZone : MonoBehaviour
                     this.transform.position.y,
                     theCamera.transform.position.z
                 );
+                
+                //Environment.morgan.setPosition(this.transform.position); //esto no funciona despues vere porque
             }
         }
     }

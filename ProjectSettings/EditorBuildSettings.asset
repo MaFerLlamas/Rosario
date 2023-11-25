@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologo/ParadaDeCamion/Prologo1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prologo/ParadaDeCamion/PrologoExitCut.unity
     guid: 4a350eb292463ce49a4a4c39214de0ad
   - enabled: 0
@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Interiores/Zona de camping/CasitaJose.unity
     guid: 485c66e0ba1b1964f9b567183fd0a049
+  - enabled: 1
+    path: Assets/Scenes/Interiores/CasaLoco.unity
+    guid: 9e4ef55f21d6a83438e09ae68260c946
   m_configObjects: {}
