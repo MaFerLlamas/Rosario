@@ -8,6 +8,13 @@ public class Environment : MonoBehaviour
     public static CameraFollow camara;
     public static MorganController morgan;
     public static string newSpawnName;
+    public static bool hablando;
+
+    public static string direccion;
+    public static string ARRIBA = "Arriba";
+    public static string ABAJO = "Abajo";
+    public static string DERECHA = "derecha";
+    public static string IZQUIERDA = "Izquierda";
     //banderas 2, casa de daniela
     // Quest 0
     public static bool prologoCasaDanielaDone;
@@ -50,6 +57,12 @@ public class Environment : MonoBehaviour
 
     public static bool habloPescador;
     public static bool tieneCana;
+
+    public static bool habloLucifer;
+    public static bool tieneMachete;
+    public static bool entregoMachete;
+    public static bool habloLocoMundoAbierto;
+    public static bool habloLuciferMundoAbierto;
     //Dialogos NPC por el mundo
 
     //INTERIOR IGLESIA
@@ -73,12 +86,14 @@ public class Environment : MonoBehaviour
         camara = FindObjectOfType<CameraFollow>();
         morgan = FindObjectOfType<MorganController>();
         newSpawnName = "spawn Name";
+        hablando = false;
+        direccion = "Abajo";
         //casa de daniela
         prologoCasaDanielaDone = false;
         prologoCasaDanielaMovementDone = false;
         prologoCasaDaniela2Done = false;
         prologoCasaDanielaMovement2Done = false;
-        prologoCasaDanielaDialogo2EscenasDone=false;
+        prologoCasaDanielaDialogo2EscenasDone = false;
         prologoCasaDaniela4PM = false;
 
         //3 escena del ayuntamiento
@@ -103,11 +118,11 @@ public class Environment : MonoBehaviour
         algoQueHacerDone = false;
 
         //6 final
-        dialogoDanielaFinalDone =false;
-        
+        dialogoDanielaFinalDone = false;
+
 
         //Misiones secundarias
-        habloJose=false;
+        habloJose = false;
         tieneFotoJose = false;
         habloDiana = false;
         habloJoseFinal = false;
@@ -115,7 +130,14 @@ public class Environment : MonoBehaviour
         fotoTrofeo = false;
 
         habloPescador = false;
-        tieneCana =false;
+        tieneCana = false;
+
+        habloLucifer = false;
+        tieneMachete = false;
+        entregoMachete = false;
+        habloLocoMundoAbierto = false;
+        habloLuciferMundoAbierto = false;
+
 
         //NPC's Dialogos
         habloPadre = false;
@@ -125,7 +147,7 @@ public class Environment : MonoBehaviour
         habloElizabthCont = 1;
         habloMarthaCont = 1;
         habloJoaquinCont = 1;
-        
+
 
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
@@ -143,7 +165,7 @@ public class Environment : MonoBehaviour
         visitedLago = true;
         visitedCamping = true;
         */
-
+        tieneMachete = true;
 
 
     }
