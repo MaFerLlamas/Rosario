@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066731410328348481}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20.870926, y: 1.2181244, z: -0.038546927}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6798458, y: -1.3769598}
+  m_Offset: {x: 0.013021469, y: 0.22756386}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9784813, y: 8.2501745}
+  m_Size: {x: 0.98942184, y: 1.0880165}
   m_EdgeRadius: 0
 --- !u!114 &5908071274760515784
 MonoBehaviour:
@@ -71,3 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9231daf94b5485a46ba86731562c266b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newPlaceName: CasaHernandez
+  newSpawnName: Entrada
+  isActive: 1
