@@ -22,6 +22,7 @@ public class DialogueLoco : MonoBehaviour
 
     private void Start()
     {
+        if(Environment.entregoMachete) Destroy(gameObject);
         elRigibody = this.GetComponent<Rigidbody2D>();
     }
     void Update()

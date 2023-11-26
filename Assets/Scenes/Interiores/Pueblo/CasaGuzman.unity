@@ -1550,8 +1550,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: interior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: spawnName
-      value: SpawnCasaGuzman
+      value: Entrada
       objectReference: {fileID: 0}
     - target: {fileID: 7163970906836352361, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: m_Name
@@ -1567,7 +1571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.95
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 7514451738600917288, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2010,11 +2014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.32
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.56
+      value: -5.55
       objectReference: {fileID: 0}
     - target: {fileID: 3210395412756460726, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2050,19 +2054,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3863435166665716045, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_Size.x
-      value: 1.8729248
+      value: 1.872925
       objectReference: {fileID: 0}
     - target: {fileID: 3863435166665716045, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_Size.y
-      value: 0.5038681
+      value: 0.57878053
       objectReference: {fileID: 0}
     - target: {fileID: 3863435166665716045, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_Offset.x
-      value: 0.6789925
+      value: 0.029746652
       objectReference: {fileID: 0}
     - target: {fileID: 3863435166665716045, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: m_Offset.y
-      value: -5.2501135
+      value: -0.06863183
       objectReference: {fileID: 0}
     - target: {fileID: 5908071274760515784, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: newPlaceName
@@ -2070,7 +2074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5908071274760515784, guid: bf297a26208ec1947bd26b585f472142, type: 3}
       propertyPath: newSpawnName
-      value: SpawnAfueraCasaGuzman
+      value: CasaGuzman
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf297a26208ec1947bd26b585f472142, type: 3}

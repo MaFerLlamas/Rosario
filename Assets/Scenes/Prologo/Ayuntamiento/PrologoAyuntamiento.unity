@@ -1238,6 +1238,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf297a26208ec1947bd26b585f472142, type: 3}
+--- !u!1 &770970424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1066731410328348481, guid: bf297a26208ec1947bd26b585f472142, type: 3}
+  m_PrefabInstance: {fileID: 770970423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &770970425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770970424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d926627ba5589a4fa8928196371a3e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &816253706
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,6 +5925,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: interior
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: spawnName
       value: Entrada

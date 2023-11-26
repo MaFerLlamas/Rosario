@@ -41,4 +41,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Interiores/CasaLoco.unity
     guid: 9e4ef55f21d6a83438e09ae68260c946
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/Cantina.unity
+    guid: b266007f40b4f954f84504eb62fd9323
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasaGonzalez.unity
+    guid: 9f81e4dd8eaff7243b562f3fd318c702
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasaHernandez.unity
+    guid: ead6bdbb94882fc43be8af1033888853
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasaPerez.unity
+    guid: 79d1844ab78ba0a48992347b84e49500
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasasAbandonadas1.unity
+    guid: 5d217c6019201d34f84bf2940ecbfdfe
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasasAbandonadas2.unity
+    guid: 09f7129f5f0a0e64ea87b53243300c9e
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/CasaTorres.unity
+    guid: 02545f2b8284c634f91ccf5702baa0c6
+  - enabled: 1
+    path: Assets/Scenes/Interiores/Pueblo/Iglesia.unity
+    guid: 20adde4f6d268c0438c47211de57978b
   m_configObjects: {}
