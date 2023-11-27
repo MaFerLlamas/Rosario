@@ -6,9 +6,6 @@ public class NPCsMovementController : MonoBehaviour
 {   
     public Transform[] positions;
     public float speed = 2.0f;
-    //En segundos
-    //public float waitingTimeBeforeWalk = 1.0f;
-    public bool waitBeforeWalk = false;
 
     private Vector2 currentStart;
     private Vector2 currentTarget;
@@ -28,9 +25,6 @@ public class NPCsMovementController : MonoBehaviour
         animator = GetComponent<Animator>();
         if (NPCShouldMove){
             nextPosition();
-        }else if (waitBeforeWalk){
-            DelayedAction();
-            NPCShouldMove = true;
         }
     }
 
@@ -58,7 +52,7 @@ public class NPCsMovementController : MonoBehaviour
     private void changeAnimationDirection(){
          //Si no hay diferencia en Horizontal entonces se mueve de arriba a abajo
         if (currentTarget.x == currentStart.x){
-            if (currentTarget.y < currentStart.y){ // Se mueve hacia arriba
+            if (currentTarget.y > currentStart.y){ // Se mueve hacia arriba
                 Debug.Log("Hacia Arriba");
                 animator.SetFloat(horizontal, 0);
                 animator.SetFloat(vertical, 1);
@@ -80,21 +74,15 @@ public class NPCsMovementController : MonoBehaviour
         }
     }
 
-    IEnumerator DelayedAction()
-    {
-        // Wait for 2 seconds
-        yield return new WaitForSeconds(2.0f);
-        
-    }
-
     void Update()
     {
             if (NPCShouldMove){
+                changeAnimationDirection();
                 Move();
             }
     }
 
-    void Move(){
+    private void Move(){
         float distanceCovered = (Time.time - startTime) * speed;
         float journeyPercentage = distanceCovered / journeyLength;
         transform.position = Vector2.Lerp(currentStart, currentTarget, journeyPercentage);
@@ -103,7 +91,6 @@ public class NPCsMovementController : MonoBehaviour
         {
             //Si se alcanzo la posicion target
             if ((Vector2)transform.position == currentTarget){
-                changeAnimationDirection();
                 nextPosition();
             }
             startTime = Time.time;
