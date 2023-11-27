@@ -6,6 +6,9 @@ public class NPCsMovementController : MonoBehaviour
 {   
     public Transform[] positions;
     public float speed = 2.0f;
+    //En segundos
+    //public float waitingTimeBeforeWalk = 1.0f;
+    public bool waitBeforeWalk = false;
 
     private Vector2 currentStart;
     private Vector2 currentTarget;
@@ -16,12 +19,19 @@ public class NPCsMovementController : MonoBehaviour
 
     private const string horizontal = "Horizontal";
     private const string vertical = "Vertical";
+    private Animator animator;
 
     public bool NPCShouldMove = false; 
     public bool isCicled = false; 
 
     void Start(){
-        nextPosition();
+        animator = GetComponent<Animator>();
+        if (NPCShouldMove){
+            nextPosition();
+        }else if (waitBeforeWalk){
+            DelayedAction();
+            NPCShouldMove = true;
+        }
     }
 
     private void nextPosition(){
@@ -45,6 +55,38 @@ public class NPCsMovementController : MonoBehaviour
         }
     }
 
+    private void changeAnimationDirection(){
+         //Si no hay diferencia en Horizontal entonces se mueve de arriba a abajo
+        if (currentTarget.x == currentStart.x){
+            if (currentTarget.y < currentStart.y){ // Se mueve hacia arriba
+                Debug.Log("Hacia Arriba");
+                animator.SetFloat(horizontal, 0);
+                animator.SetFloat(vertical, 1);
+            }else{ //se mueve hacia abajo
+                Debug.Log("Hacia Abajo");
+                animator.SetFloat(horizontal, 0);
+                animator.SetFloat(vertical, -1);
+            }
+        } else if (currentTarget.y == currentStart.y){ //Si no hay diferencia en Vertical entonces se mueve hacia los lados
+            if (currentTarget.x < currentStart.x){ // Se mueve hacia la Izquierda
+                Debug.Log("Hacia Izquierda");
+                animator.SetFloat(horizontal, -1);
+                animator.SetFloat(vertical, 0);
+            }else{ //se mueve hacia la derecha
+                Debug.Log("Hacia derecha");
+                animator.SetFloat(horizontal, 1);
+                animator.SetFloat(vertical, 0);
+            }
+        }
+    }
+
+    IEnumerator DelayedAction()
+    {
+        // Wait for 2 seconds
+        yield return new WaitForSeconds(2.0f);
+        
+    }
+
     void Update()
     {
             if (NPCShouldMove){
@@ -61,24 +103,9 @@ public class NPCsMovementController : MonoBehaviour
         {
             //Si se alcanzo la posicion target
             if ((Vector2)transform.position == currentTarget){
+                changeAnimationDirection();
                 nextPosition();
             }
-            /*
-            // Swap the target position when reaching the current target.
-            if (currentTarget == (Vector2)endPosition.position)
-            {
-                if (isInterrupted){
-                    ElizabethShouldMove = false;
-                }else{
-                    currentTarget = startPosition.position;
-                    currentStart = endPosition;
-                }
-            }
-            else
-            {
-                    currentTarget = endPosition.position;
-                    currentStart = startPosition;
-            }*/
             startTime = Time.time;
         }
     }

@@ -32,6 +32,7 @@ public class ElizabethPerezDialogue : MonoBehaviour
         }
     }
     private void startDialogue(){
+        FindObjectOfType<NPCsMovementController>().NPCShouldMove = false;
             switch (Environment.habloElizabthCont)
         {
             case 1:
