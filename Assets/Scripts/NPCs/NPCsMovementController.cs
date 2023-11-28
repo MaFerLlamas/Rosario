@@ -53,33 +53,36 @@ public class NPCsMovementController : MonoBehaviour
          //Si no hay diferencia en Horizontal entonces se mueve de arriba a abajo
         if (currentTarget.x == currentStart.x){
             if (currentTarget.y > currentStart.y){ // Se mueve hacia arriba
-                Debug.Log("Hacia Arriba");
                 animator.SetFloat(horizontal, 0);
                 animator.SetFloat(vertical, 1);
             }else{ //se mueve hacia abajo
-                Debug.Log("Hacia Abajo");
                 animator.SetFloat(horizontal, 0);
                 animator.SetFloat(vertical, -1);
             }
         } else if (currentTarget.y == currentStart.y){ //Si no hay diferencia en Vertical entonces se mueve hacia los lados
             if (currentTarget.x < currentStart.x){ // Se mueve hacia la Izquierda
-                Debug.Log("Hacia Izquierda");
                 animator.SetFloat(horizontal, -1);
                 animator.SetFloat(vertical, 0);
             }else{ //se mueve hacia la derecha
-                Debug.Log("Hacia derecha");
                 animator.SetFloat(horizontal, 1);
                 animator.SetFloat(vertical, 0);
             }
         }
     }
 
+    public void stopAnimation(){
+        animator.SetFloat(horizontal, 0);
+        animator.SetFloat(vertical, 0);
+    }
+
     void Update()
     {
-            if (NPCShouldMove){
-                changeAnimationDirection();
-                Move();
-            }
+        if (NPCShouldMove){
+            Move();
+            changeAnimationDirection();
+        }else{
+            stopAnimation();
+        }
     }
 
     private void Move(){
