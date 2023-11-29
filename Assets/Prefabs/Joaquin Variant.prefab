@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2576646518985034545, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3770389347499461136, guid: c568544511bb2244f898204669db80df, type: 3}
       propertyPath: m_Name
       value: DialogueMarkNPCJoaquin
