@@ -165,7 +165,6 @@ public class Environment : MonoBehaviour
         visitedLago = true;
         visitedCamping = true;
         */
-        didDialogueAlreadyPastGlz=true;
 
 
     }
