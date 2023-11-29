@@ -37,6 +37,8 @@ public class NPCsMovementController : MonoBehaviour
                 if (isCicled){ // pero si el movimiento es repetitivo volvemos al inicio
                     pos = 0;
                     currentTarget = positions[pos].position;
+                }else{
+                    NPCShouldMove = false;
                 }
             }else {
                 currentTarget = positions[pos+1].position;

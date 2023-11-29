@@ -65,6 +65,7 @@ public class MarthaDialogue : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
+            FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
             Time.timeScale = 1f;
             Environment.habloMarthaCont ++;
             

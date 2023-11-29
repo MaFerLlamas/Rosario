@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3770389349170652310, guid: c568544511bb2244f898204669db80df, type: 3}
       propertyPath: m_Name
-      value: Joaquin
+      value: Joaquin Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3770389349170652311, guid: c568544511bb2244f898204669db80df, type: 3}
       propertyPath: m_RootOrder
@@ -128,6 +128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5272314817505098963, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5cbe333ddf74a4b46bdc37e004d0635e, type: 2}
     m_RemovedComponents:
     - {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c568544511bb2244f898204669db80df, type: 3}

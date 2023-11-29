@@ -76,10 +76,11 @@ public class JoaquinDialogue : MonoBehaviour
             {
             case 2:
                //Mover al Cementerio
-               this.gameObject.SetActive(false);
+               FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
                isPlayerInRange = false;
                break;
             case 3:
+                FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
                 //parada de camion junto al arbol
                 isPlayerInRange = false;
                 break;
