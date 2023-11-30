@@ -47,6 +47,7 @@ public class DanielaPrologoMovement : MonoBehaviour
         {
             FindObjectOfType<MorganController>().morganShouldMove = true;
             Environment.prologoCasaDanielaMovementDone = true;
+            danielaRigidbody.velocity = new Vector2(0, 0);
             animationDaniela.SetFloat(HORIZONTAL, 0); //idle
             animationDaniela.SetFloat(VERTICAL, 0);
         }
@@ -56,7 +57,7 @@ public class DanielaPrologoMovement : MonoBehaviour
     public void regresarDaniela()
     {
         //Debug.Log(danielaRigidbody.velocity.x+"/"+ danielaRigidbody.velocity.y);
-        if (this.transform.position.x > -2.5 && this.transform.position.x < -1.5 && this.transform.position.y > -2 && this.transform.position.y < -1)
+        if (this.transform.position.x > -2.5f && this.transform.position.x < -1.5f && this.transform.position.y > -3.4f && this.transform.position.y < -1.0f)
         {
             danielaRigidbody.velocity = new Vector2(0, -VELOCITY); //down
             animationDaniela.SetFloat(HORIZONTAL, 0);
@@ -100,6 +101,12 @@ public class DanielaPrologoMovement : MonoBehaviour
             Environment.prologoCasaDanielaMovement2Done = true;
             //Debug.Log("finish");
             //Environment.prologoCasaDanielaDone = false;
+        }
+        else
+        {
+            danielaRigidbody.velocity = new Vector2(0, 0); //idle
+            animationDaniela.SetFloat(HORIZONTAL, 0);
+            animationDaniela.SetFloat(VERTICAL, 0);
         }
     }
 

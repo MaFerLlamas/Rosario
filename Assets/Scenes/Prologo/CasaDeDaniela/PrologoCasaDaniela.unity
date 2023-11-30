@@ -2103,6 +2103,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: interior
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: spawnName
       value: Entrada
       objectReference: {fileID: 0}
@@ -6112,6 +6116,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
+      propertyPath: interior
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4505798372807209203, guid: 76b91afbdcc3fe14583d4c2f365f73a2, type: 3}
       propertyPath: spawnName
       value: WC
