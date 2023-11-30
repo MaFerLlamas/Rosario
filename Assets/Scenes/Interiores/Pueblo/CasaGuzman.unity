@@ -1242,6 +1242,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueMarkNPCGuzman
       objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652298, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770389349170652298, guid: c568544511bb2244f898204669db80df, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
       propertyPath: dialogueText
       value: 
@@ -1410,6 +1418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2576646518985034545, guid: c568544511bb2244f898204669db80df, type: 3}
+    - {fileID: 3770389349170652308, guid: c568544511bb2244f898204669db80df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c568544511bb2244f898204669db80df, type: 3}
 --- !u!1 &920681469 stripped
 GameObject:
@@ -1437,6 +1446,54 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &920681471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3770389347499461136, guid: c568544511bb2244f898204669db80df, type: 3}
+  m_PrefabInstance: {fileID: 920681468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &920681472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920681469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93117f9577c489e448ee8b360ca6f15a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueMark: {fileID: 920681471}
+  dialoguePanel: {fileID: 1837648116}
+  dialogueText: {fileID: 1837648115}
+  dialogueLines1:
+  - "Sr. Guzman: No te conozco, \xBFqu\xE9 haces en mi casa?"
+  - "Morgan: Tan solo pasaba a saludar, ya llevo unos d\xEDas en el pueblo"
+  - "Morgan:  pero reci\xE9n me anime a conocerlos a todos, soy Morgan."
+  - 'Sr. Guzman: Comprendo, soy Guzman, espero no seas un vago '
+  - "Morgan: No es mi intenci\xF3n serlo"
+  - "Sr. Guzm\xE1n: \xBFY viniste t\xFA solo a Rosario?\r"
+  - "Morgan: No, me estoy quedando con mi prima Daniela, trabaja en el ayuntamiento\r"
+  - 'Sr. Guzman: He hablado con ella un par de veces en el ayuntamiento, es eficiente
+    con su trabajo'
+  - 'Morgan: Yo siento que no la conozco mucho'
+  - "Morgan:  ten\xEDa bastante tiempo sin verla, y desde que llegu\xE9 no he hablado
+    mucho con ella"
+  - "Sr. Guzm\xE1n: \xBFNo est\xE1s viviendo con ella?"
+  - "Morgan: S\xED jeje, pero me la pasaba encerrado en el cuarto todo el d\xEDa\r."
+  - "Sr. Guzman: Deber\xEDas acercarte m\xE1s a ella, es valioso mantener a la familia
+    unida. "
+  - "Sr. Guzman: Yo por ejemplo vivo aqu\xED con mi hijo, mi esposa muri\xF3 en el
+    parto."
+  - 'Morgan: Lo lamento'
+  - "Sr. Guzm\xE1n: No pasa nada, ya hace tiempo de eso. El tiempo trae resignaci\xF3n"
+  - "Morgan: \xBFC\xF3mo se llamaba?"
+  - "Sr. Guzman: Guadalupe Hern\xE1ndez, era una gran mujer.\r"
+  - 'Morgan: No lo dudo'
+  - "Sr. Guzman: Bueno, tengo cosas que hacer, busca algo que hacer\r"
+  - "Morgan: Jajaja lo har\xE9"
+  dialogueLines2:
+  - "Sr. Guzman: Bueno, tengo cosas que hacer, busca algo que hacer\r"
 --- !u!1 &946848165
 GameObject:
   m_ObjectHideFlags: 0
