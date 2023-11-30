@@ -84,6 +84,8 @@ public class Creditos : MonoBehaviour
                 }else if(timer >= 6.0f && timer < 7.0f)
                 {
                     spriteRenderer.sprite = creditosFinal;
+                }else if (timer >7.0f){
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
                 }
             }
             else if (clarity > 254)

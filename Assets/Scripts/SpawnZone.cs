@@ -14,8 +14,8 @@ public class SpawnZone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("SpawnName Evironment " + Environment.newSpawnName);
-        Debug.Log("This SpawnName  " + this.spawnName);
+        //Debug.Log("SpawnName Evironment " + Environment.newSpawnName);
+        //Debug.Log("This SpawnName  " + this.spawnName);
         if  (Environment.newSpawnName != null){
 
             if(Environment.newSpawnName.Equals(this.spawnName))

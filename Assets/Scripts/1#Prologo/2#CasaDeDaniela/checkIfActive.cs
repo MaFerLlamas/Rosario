@@ -13,11 +13,14 @@ public class checkIfActive : MonoBehaviour
         {
             mundoAbierto.isActive = false;
         }
-        if(Environment.prologoCasaDaniela4PM && !visitsDone)
+        if (Environment.prologoCasaDaniela4PM && !visitsDone && !Environment.didDialogueAlreadyPast)
         {
             Destroy(FindObjectOfType<DialogueDanielaCasaDaniela>().gameObject);
             mundoAbierto.newPlaceName = "PrologoAyuntamiento";
             mundoAbierto.newSpawnName = "Entrada";
+        } else if (!visitsDone && Environment.prologoCasaDaniela4PM)
+        {
+            Destroy(FindObjectOfType<DialogueDanielaCasaDaniela>().gameObject);
         }
     }
 

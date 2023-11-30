@@ -5,8 +5,8 @@ using TMPro;
 
 public class DialoguePrologue : MonoBehaviour
 {
-    [SerializeField] private AudioClip npcVoice;
-    [SerializeField] private AudioClip playerVoice;
+    //[SerializeField] private AudioClip npcVoice;
+    //[SerializeField] private AudioClip playerVoice;
     [SerializeField] private float typingTime;
     [SerializeField] private int charsToPlaySound;
     [SerializeField] private bool isPlayerTalking;
@@ -33,7 +33,7 @@ public class DialoguePrologue : MonoBehaviour
     private void Start() {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = npcVoice;
+        //audioSource.clip = npcVoice;
     }
 
    
@@ -108,7 +108,7 @@ public class DialoguePrologue : MonoBehaviour
         isPlayerTalking = !isPlayerTalking;
         }
 
-        audioSource.clip = isPlayerTalking ? playerVoice : npcVoice;
+        //audioSource.clip = isPlayerTalking ? playerVoice : npcVoice;
     }
 
     private IEnumerator ShowLine()
