@@ -24,12 +24,12 @@ public class NPCsController : MonoBehaviour
                joaquinVariant.SetActive(true);
                break;
             case 3:
-                joaquinVariant.transform.position = joaquinVariantPos2.transform.position;
+                //joaquinVariant.transform.position = joaquinVariantPos2.transform.position;
                 joaquinVariant.SetActive(true);
                 break;
             case 4:
-                joaquinVariant.transform.position = joaquinVariantPos3.transform.position;
-                joaquinVariant.SetActive(true);
+                //joaquinVariant.transform.position = joaquinVariantPos3.transform.position;
+                //joaquinVariant.SetActive(true);
                 break;
             default:
                 //Mostrar en Casa

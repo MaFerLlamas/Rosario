@@ -67,11 +67,14 @@ public class DialogueMaquinaChesco : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
-            Environment.dialogoChesco1Done = true;
-            //Mostrando Mision en pantalla
-            // "aLGO QUE Hacer"
-            //QUEST 1 Parte 2 Ve a la fabrica ABANDONADA
+            if (Environment.dialogoChesco1Done){
+                //Mostrando Mision en pantalla
+                // "aLGO QUE Hacer"
+                //QUEST 1 Parte 2 Ve a la fabrica ABANDONADA
             FindObjectOfType<QuestDialogue>().UpdateQuest(1, "Ve a la fabrica Abandonada");
+
+            }
+            Environment.dialogoChesco1Done = true;
         }
     }
 

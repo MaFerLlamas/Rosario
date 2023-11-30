@@ -101,14 +101,17 @@ public class NPCMovement2 : MonoBehaviour
 
     void Update()
     {
-        if (NPCShouldMove)
-        {
-            Move();
-            changeAnimationDirection();
-        }
-        else
-        {
-            stopAnimation();
+        if (Environment.prologoCasaDanielaDone){
+            Debug.Log("prologoDone");
+            if (NPCShouldMove)
+            {
+                Move();
+                changeAnimationDirection();
+            }
+            else
+            {
+                stopAnimation();
+            }
         }
     }
 

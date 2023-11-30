@@ -80,18 +80,20 @@ public class JoaquinDialogue : MonoBehaviour
                isPlayerInRange = false;
                break;
             case 3:
+            Debug.Log("habloJoaquinCont "+ Environment.habloJoaquinCont);
                 FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
                 //parada de camion junto al arbol
                 isPlayerInRange = false;
                 break;
             case 4:
                 //Mover a gassolinera
+                //FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
                 isPlayerInRange = false;
-                dialogue = dialogueLines4;   break;
+                break;
             case 5:
                 //Mostrar en Casa
                 Environment.habloJoaquinCont = 5;
-                this.gameObject.SetActive(true);  
+                //this.gameObject.SetActive(true);  
                 break;
             default:
                 //Mostrar en Casa

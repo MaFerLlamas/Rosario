@@ -19,12 +19,11 @@ Debug.Log("llamada recibida Mision "+ questID);
             if (startPoint && !manager.quests[questID].gameObject.activeInHierarchy){
                 manager.quests[questID].gameObject.SetActive(true);
                 manager.quests[questID].startQuest(); 
-                Debug.Log("0");
                 manager.questsList[questID].gameObject.SetActive(true);
                 manager.questsList[questID].startListQuest(); 
             }
 
-            if (endPoint && manager.quests[questID].gameObject.activeInHierarchy){
+            if (endPoint){
                 manager.quests[questID].CompleteQuest();
                 manager.questsList[questID].gameObject.SetActive(false);
             }

@@ -68,6 +68,12 @@ public class DialogueMarisela : MonoBehaviour
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             //firstDialogue = false; //with this will not repeat everything from start
+            if (Environment.dialogoDentroFabricaAbandonadaDone){
+                //Mostrando Mision en pantalla
+                // "Algo Que Hacer"
+                //QUEST 1 Parte 3 
+                FindObjectOfType<QuestDialogue>().UpdateQuest(1, "vueve a hablar con el Licenciado en el Ayuntamiento");
+            }
             Environment.dialogoDentroFabricaAbandonadaDone = true;
         }
     }

@@ -61,6 +61,9 @@ public class DialogueAlgoQueHacerStart : MonoBehaviour
             dialoguePanel.SetActive(false);
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
+            // Algo Que Hacer
+            //QUEST 2 INICIO Habla con tu prima daniela
+            FindObjectOfType<QuestDialogue>().initQuest(2, true, false);
         }
     }
 

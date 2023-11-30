@@ -25,7 +25,7 @@ public class Quest : MonoBehaviour
         manager.showQuestText(newText);
     }
     public void CompleteQuest(){
-        manager.showQuestText(completeText);
+        //manager.showQuestText(completeText);
         manager.questCompleted[questID] = true;
         gameObject.SetActive(false);
     }

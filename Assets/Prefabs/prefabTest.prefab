@@ -653,7 +653,7 @@ MonoBehaviour:
   dialogText: {fileID: 7812966100933765957}
   questActive: 0
   title: Algo que hacer
-  quest: 'Visita todos los Escenarios de Rosario '
+  quest: Habla con tu prima daniela
 --- !u!1 &7812966100955972740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,7 +1722,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 294, y: 79.791}
-  m_SizeDelta: {x: 275.94, y: 159.58}
+  m_SizeDelta: {x: 150, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7812966101791338019
 CanvasRenderer:
@@ -2197,8 +2197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 7812966101981854369}
   questActive: 0
-  title: 3
-  quest: Hello World
+  title: El principio de algo
+  quest: Visita todos los Escenarios de Rosario
 --- !u!1 &7812966102175699715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2772,7 +2772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 2
-  startText: 'Algo que hacer: Visita todos los Escenarios de Rosario'
+  startText: 'Algo que hacer: Habla con tu prima daniela de Rosario'
   completeText: 
 --- !u!1001 &1687720546889498978
 PrefabInstance:

@@ -90,6 +90,10 @@ public class DialogueAyuntLicGlez : MonoBehaviour
             {
                 Environment.dialogoAyuntamientoLicDone = true;
                 Environment.algoQueHacerStart = true;
+                //Mostrando Mision en pantalla
+                    //FIN DE QUEST 1
+                    //Y ahora Que
+                    FindObjectOfType<QuestDialogue>().initQuest(1, false, true);
             }
             Environment.didLicThoughtsPast = true;
             GoToNewPlace newPlace = FindObjectOfType<GoToNewPlace>();
