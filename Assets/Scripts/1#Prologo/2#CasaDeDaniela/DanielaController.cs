@@ -12,7 +12,7 @@ public class DanielaController : MonoBehaviour
 
     private void Update()
     {
-        
+        /*
         if (danielaShouldMove && targetPosition != null && false){
 
             // Calculate the direction to the target.
@@ -24,5 +24,6 @@ public class DanielaController : MonoBehaviour
             // Move the character towards the target.
             transform.Translate(direction * speed * Time.deltaTime);
         }
+        */
     }
 }
