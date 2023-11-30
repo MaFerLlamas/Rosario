@@ -21,7 +21,7 @@ public class shadowing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            //this.transform.position = new Vector2(Environment.morgan.transform.position.x, Environment.morgan.transform.position.y); //revisar esto
+        this.transform.position = new Vector2(Environment.morgan.transform.position.x, Environment.morgan.transform.position.y); //siempre esta con morgan pero transparente
         if (Environment.prologoCasaDanielaMovement2Done)
         {
             if(darkness < 255f && !dark)

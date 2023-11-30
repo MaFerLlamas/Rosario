@@ -8,24 +8,20 @@ public class DialogueCasaDaniela0 : MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines;
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLines2;
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private bool firstDialogueActivated;
     private int lineIndex=0;
-    //Propositos de Testig Activar para saltar Dialogo
-    public bool skipDialogueForTesting;
     void Start(){
-        //Propositos de Testig
-            if (Environment.skipDialogueForTestingAll == true){
-            skipDialogueForTesting = true;
-        }
+        
     }
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && Input.GetButtonDown("Fire1") /*&& !Environment.prologoCasaDanielaDone*/){
+        if (isPlayerInRange && Input.GetButtonDown("Fire1")){
             if (!didDialogueStart){
                 startDialogue();
             }else if (dialogueText.text == dialogueLines[lineIndex]){
@@ -42,18 +38,18 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             dialogueMark.SetActive(false);
             if (Environment.prologoCasaDanielaMovementDone)
             {
-                lineIndex = 1;
+                //lineIndex = 1;
+                dialogueLines = dialogueLines2;
             }
-            //lineIndex = 0;
+            lineIndex = 0;
             Time.timeScale = 0f;
             StartCoroutine(ShowLine());
     }
 
     private void nextDialogueLine(){
         lineIndex++;
-        if (lineIndex < dialogueLines.Length && Environment.prologoCasaDanielaMovementDone || lineIndex <1){
+        if (lineIndex < dialogueLines.Length/* && Environment.prologoCasaDanielaMovementDone || lineIndex <1*/){
             StartCoroutine(ShowLine());
-            
         }
         else {
             //FIN DEL DIALOGO
@@ -63,11 +59,13 @@ public class DialogueCasaDaniela0 : MonoBehaviour
             Time.timeScale = 1f;
             FindObjectOfType<MorganController>().morganShouldMove = false;
             FindObjectOfType<CameraFollow>().followTarget = GameObject.Find("Daniela");
-            FindObjectOfType<DanielaController>().danielaShouldMove = true;
+            //FindObjectOfType<DanielaController>().danielaShouldMove = true;
             Environment.prologoCasaDanielaDone = true;
-            Debug.Log(lineIndex);
-            if (lineIndex == 3)
+            GetComponent<NPCsMovementController>().NPCShouldMove = true;
+            if (Environment.prologoCasaDanielaMovementDone)
             {
+                //GetComponent<NPCsMovementController>().isCicled = true;
+                GetComponent<NPCMovement2>().NPCShouldMove = true;
                 Environment.prologoCasaDaniela2Done = true;
             }
 
