@@ -64,6 +64,10 @@ public class DialoguePrincipioDeAlgo : MonoBehaviour
             dialogueMark.SetActive(true);
             Time.timeScale = 1f;
             Environment.algoQueHacerDone = true;
+            //Mostrando Mision en pantalla
+            //FIN DE QUEST 2
+            //Algo que hacer
+            FindObjectOfType<QuestDialogue>().initQuest(2, false, true);
         }
     }
 

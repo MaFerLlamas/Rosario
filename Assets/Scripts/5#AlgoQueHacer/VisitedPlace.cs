@@ -9,12 +9,7 @@ public class VisitedPlace : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Environment.VisitedPlace(this.name);
-            if (Environment.algoQueHacerVisitsDone()){
-                //Mostrando Mision en pantalla
-                //FIN DE QUEST 2
-                //Algo que hacer
-                FindObjectOfType<QuestDialogue>().initQuest(2, false, true);
-            }
+            
         }
     }
 }

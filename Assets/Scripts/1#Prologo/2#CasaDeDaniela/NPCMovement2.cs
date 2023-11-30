@@ -108,10 +108,11 @@ public class NPCMovement2 : MonoBehaviour
                 Move();
                 changeAnimationDirection();
             }
-            else
+            /*
+            else if(Environment.habloDianaFinal)
             {
                 stopAnimation();
-            }
+            }*/
         }
     }
 
