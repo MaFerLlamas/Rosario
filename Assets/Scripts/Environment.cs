@@ -74,6 +74,7 @@ public class Environment : MonoBehaviour
     //INTERIORES
     public static int habloElizabthCont;
     public static int habloJoaquinCont;
+    public static bool habloGuzman;
     //Zona de Camping
     public static bool habloGonzaloEspinoza;
 
@@ -137,6 +138,7 @@ public class Environment : MonoBehaviour
         entregoMachete = false;
         habloLocoMundoAbierto = false;
         habloLuciferMundoAbierto = false;
+        habloGuzman = false;
 
 
         //NPC's Dialogos
