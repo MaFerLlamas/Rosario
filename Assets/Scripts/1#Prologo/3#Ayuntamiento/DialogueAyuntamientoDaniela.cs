@@ -67,7 +67,7 @@ public class DialogueAyuntamientoDaniela : MonoBehaviour
                 //Mostrando Mision en pantalla
                 // "Algo Que Hacer"
                 //QUEST 2 Parte 2 Visita todos los Escenarios de Rosario
-                FindObjectOfType<QuestDialogue>().UpdateQuest(2, "Visita todos los Escenarios de Rosario");
+                FindObjectOfType<QuestDialogue>().UpdateQuest(2, "Visita todos los Escenarios de Rosario - Cementerio - Cerro \n Gasolinera - Granja - Lago - Zona de camping");
                 
             }
         }
