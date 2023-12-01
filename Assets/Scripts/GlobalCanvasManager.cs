@@ -7,13 +7,19 @@ public class GlobalCanvasManager : MonoBehaviour
 {
     [SerializeField] public GameObject scrollView; 
     [SerializeField] public GameObject btnOpciones; 
-    [SerializeField] public GameObject panelGlobal; 
+    [SerializeField] public GameObject panelGlobal;
 
     public void Reiniciar()
     {
-        //  Destroy(Morgan);
-        //  Destroy(Camera);
-        //  Destroy(canvas);
+        Environment.restart();
+        GameObject morgan=GameObject.Find("Morgan");
+        if (morgan != null)
+        {
+            morgan.transform.position = new Vector3(0, 0, 0);
+        }
+        panelGlobal.SetActive(false);
+        btnOpciones.SetActive(true);
+
         SceneManager.LoadScene("Prologo1");
     }
 

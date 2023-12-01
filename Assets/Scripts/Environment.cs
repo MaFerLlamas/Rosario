@@ -33,6 +33,7 @@ public class Environment : MonoBehaviour
     public static bool dialogoFueraFabricaAbandonadaDone;
     public static bool dialogoDentroFabricaAbandonadaDone;
     public static bool dialogoAyuntamientoLicDone;
+    public static bool tieneCoquita;
     //banderas 5 algo que hacer
     public static bool algoQueHacerStart;
     public static bool dialogoDanielaAlgoQueHacerDone;
@@ -82,13 +83,8 @@ public class Environment : MonoBehaviour
     //Propositos de Testig
     //Activar para saltarse los Dialogos 
     public static bool skipDialogueForTestingAll = false;
-    void Start()
+    public static void restart()
     {
-        camara = FindObjectOfType<CameraFollow>();
-        morgan = FindObjectOfType<MorganController>();
-        newSpawnName = "spawn Name";
-        hablando = false;
-        direccion = "Abajo";
         //casa de daniela
         prologoCasaDanielaDone = false;
         prologoCasaDanielaMovementDone = false;
@@ -106,6 +102,7 @@ public class Environment : MonoBehaviour
         dialogoFueraFabricaAbandonadaDone = false;
         dialogoDentroFabricaAbandonadaDone = false;
         dialogoAyuntamientoLicDone = false;
+        tieneCoquita = false;
 
         //5 algo que hacer
         algoQueHacerStart = false;
@@ -149,7 +146,17 @@ public class Environment : MonoBehaviour
         habloElizabthCont = 1;
         habloMarthaCont = 1;
         habloJoaquinCont = 1;
+    }
 
+    void Start()
+    {
+        camara = FindObjectOfType<CameraFollow>();
+        morgan = FindObjectOfType<MorganController>();
+        newSpawnName = "spawn Name";
+        hablando = false;
+        direccion = "Abajo";
+
+        restart();
 
         //testing here
         /* arriba estaran los valores por default que tendra el juego al iniciarse, pero si quieren adelantarse
