@@ -24899,8 +24899,31 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8394334185443328072, guid: db7b04a317cf10549a8bc2af2502c41f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2093222411}
+    - target: {fileID: 8394334185443328072, guid: db7b04a317cf10549a8bc2af2502c41f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reiniciar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394334185443328072, guid: db7b04a317cf10549a8bc2af2502c41f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GlobalCanvasManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db7b04a317cf10549a8bc2af2502c41f, type: 3}
+--- !u!114 &2093222411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5604245918961305958, guid: db7b04a317cf10549a8bc2af2502c41f, type: 3}
+  m_PrefabInstance: {fileID: 2093222410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66edadb94d4cf804786d89a5229d7f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2128985191
 GameObject:
   m_ObjectHideFlags: 0
@@ -25208,8 +25231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baedc001250c4e14ba71a2bd0bc5e29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcVoice: {fileID: 8300000, guid: fa171cd9f359bf743897a568c73d9074, type: 3}
-  playerVoice: {fileID: 8300000, guid: f84c7e2232e362e4ebc738f8a768772c, type: 3}
   typingTime: 0.05
   charsToPlaySound: 3
   isPlayerTalking: 0
