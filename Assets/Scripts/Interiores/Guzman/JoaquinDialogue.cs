@@ -14,6 +14,8 @@ public class JoaquinDialogue : MonoBehaviour
     [SerializeField, TextArea(4,6)] private string[] dialogueLines4;
     [SerializeField, TextArea(4,6)] private string[] dialogueLines5;
 
+    public GameObject[] cards;
+
 
     private float typingTime = 0.05f;
     private bool isPlayerInRange;
@@ -46,7 +48,6 @@ public class JoaquinDialogue : MonoBehaviour
             case 4:
                 dialogue = dialogueLines4;   break;
             case 5:
-                Environment.habloJoaquinCont = 5;
                 dialogue = dialogueLines5;  break;
             default:
                 dialogue = dialogueLines5;
@@ -76,24 +77,36 @@ public class JoaquinDialogue : MonoBehaviour
             {
             case 2:
                //Mover al Cementerio
-               FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
+                // Debug.Log("voy a Cementerio" + Environment.habloJoaquinCont);
+               GetComponent<NPCsMovementController>().NPCShouldMove = true;
                isPlayerInRange = false;
                break;
             case 3:
-            Debug.Log("habloJoaquinCont "+ Environment.habloJoaquinCont);
-                FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
-                //parada de camion junto al arbol
+                // Debug.Log("voy a Parada del camion" + Environment.habloJoaquinCont);
+               //Dejar Carta 1
+                cards[0].SetActive(true);
+                //Mover a la parada de camion junto al arbol
+                GetComponent<NPCsMovementController>().NPCShouldMove = true;
                 isPlayerInRange = false;
                 break;
             case 4:
-                //Mover a gassolinera
-                //FindObjectOfType<NPCsMovementController>().NPCShouldMove = true;
+                //Dejar Carta 2
+                // Debug.Log("voy a Gasolinera" + Environment.habloJoaquinCont);
+                cards[1].SetActive(true);
+                //Mover a gasolinera
+                GetComponent<NPCsMovementController>().NPCShouldMove = true;
                 isPlayerInRange = false;
                 break;
             case 5:
-                //Mostrar en Casa
+                //Dejar Carta 3
+                // Debug.Log("Regresar a casa" + Environment.habloJoaquinCont);
+                cards[2].SetActive(true);
+                //Mover a Casa
+                GetComponent<NPCsMovementController>().NPCShouldMove = true;
+                break;
+            case 6: 
                 Environment.habloJoaquinCont = 5;
-                //this.gameObject.SetActive(true);  
+                this.gameObject.SetActive(true);  
                 break;
             default:
                 //Mostrar en Casa

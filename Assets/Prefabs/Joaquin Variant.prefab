@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2576646518985034545, guid: c568544511bb2244f898204669db80df, type: 3}
       propertyPath: speed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3770389347499461136, guid: c568544511bb2244f898204669db80df, type: 3}
       propertyPath: m_Name
@@ -176,6 +176,9 @@ MonoBehaviour:
     mi casa\r"
   dialogueLines5:
   - 'Jr.: Estoy bien cansado de correr por todo el pueblo'
+  cards:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &9134001856175497289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3770389347499461136, guid: c568544511bb2244f898204669db80df, type: 3}

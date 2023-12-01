@@ -5,18 +5,12 @@ using UnityEngine;
 public class NPCsController : MonoBehaviour
 {
     [SerializeField] private GameObject joaquinVariant;
-    [SerializeField] private GameObject joaquinVariantPos2;
-    [SerializeField] private GameObject joaquinVariantPos3;
+    [SerializeField] private GameObject Arbol;
+    [SerializeField] private GameObject Gasolineria;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-         switch (Environment.habloJoaquinCont)
+        switch (Environment.habloJoaquinCont)
             {
 
             case 2:
@@ -24,17 +18,19 @@ public class NPCsController : MonoBehaviour
                joaquinVariant.SetActive(true);
                break;
             case 3:
-                //joaquinVariant.transform.position = joaquinVariantPos2.transform.position;
+                //Activar posicion Arbol
+                joaquinVariant.transform.position = Arbol.transform.position;
                 joaquinVariant.SetActive(true);
                 break;
             case 4:
-                //joaquinVariant.transform.position = joaquinVariantPos3.transform.position;
-                //joaquinVariant.SetActive(true);
+                //Activar posicion Gasolinera
+                joaquinVariant.transform.position = Gasolineria.transform.position;
                 break;
             default:
                 //Mostrar en Casa
+                joaquinVariant.SetActive(false);
                 break;
         }
-        
     }
+
 }
